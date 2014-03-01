@@ -1,8 +1,12 @@
 !!! 5
 html
   head
+    link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic,400italic")
+    link(rel="stylesheet", href="/firstToast.css")
+    //CSS reset + grid
     link(rel="stylesheet", href="/main.css")
   body
+      h1 Hi from layout
       != yield
     footer
-      p Made by ndrw.me
+      p Made by <a href="http://ndrw.me">ndrw.me</a>
