@@ -2,11 +2,15 @@
 html
   head
     link(rel="stylesheet", href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic,400italic")
-    link(rel="stylesheet", href="/firstToast.css")
+    link(rel="stylesheet", href="/firstToastGrid.css")
     //CSS reset + grid
     link(rel="stylesheet", href="/main.css")
   body
-      h1 Hi from layout
-      != yield
-    footer
-      p Made by <a href="http://ndrw.me">ndrw.me</a>
+    div.container
+      div.grid
+        p.mainlink <a href="/">ndrw.me</a>
+        != yield
+      footer
+        p Made by <a href="http://ndrw.me">ndrw.me</a>
+
+    
