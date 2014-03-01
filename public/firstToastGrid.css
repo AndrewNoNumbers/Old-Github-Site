@@ -183,7 +183,7 @@ vertical-align:middle;
 	as necessary.
 \*-----------------------------------*/
 
-p, .p, ul, ol, hr, table, form, pre,
+p, .p, ul, ol, hr, table, pre,
 h1, .alpha, h2, .beta {
 	margin-bottom: 30px;
 	margin-bottom: 1.5rem;
