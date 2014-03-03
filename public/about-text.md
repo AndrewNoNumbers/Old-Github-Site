@@ -7,5 +7,6 @@ The header of this blog is by California artist, Michael Martin. All other work 
 User Experience Designer. Human. Company Starter. Mobile Lover.
 
 
-
+###About this site
+I don't consider myself a developer, but 
 

@@ -7,10 +7,13 @@ html
     link(rel="stylesheet", href="/main.css")
   body
     div.container
+      div#thebar
+        != partial("_emailcollector")
       div.grid
         p.mainlink <a href="/">ndrw.me</a>
         != yield
       footer
         p Made by <a href="/">ndrw.me</a>
+        p Built on Harpjs, HTML5, and LESS
 
     
