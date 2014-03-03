@@ -26,7 +26,8 @@ h1{
 }
 
 h3{
-  font-weight: 300;
+  font-weight: 400;
+  font-size: 1.3rem;
   padding: 15px 0;
 }
 
@@ -49,20 +50,35 @@ nav ul li {
 
 
 /*--------------
-  Projects Grid
+  Projects Display
 ----------------*/
 
-.project-grid {
+.a-project {
   margin-top: 150px;
+  font-size: 0.9rem;
+  padding: 50px 0;
 }
 
-.one-of-three {
-  margin-bottom: 40px;
+.a {
+  color: #fff;
+  background: linear-gradient(45deg, #0a1855 0%, #da0024 100%) fixed;
 }
 
-.one-of-three img {
-  max-width: 210px;
-} 
+.b {
+  color: #fff;
+  background: linear-gradient(45deg, #14272c 0%, #155af3 100%) fixed;
+}
+
+.c {
+  color: #fff;
+  background: linear-gradient(45deg, #44a226 0%, #7dca49 100%) fixed;
+}
+
+.d {
+  color: #fff;
+  background: linear-gradient(45deg, #e87975 0%, #f3c49f 100%) fixed;
+}
+
 
 
 /*--------------
@@ -70,11 +86,15 @@ nav ul li {
 ----------------*/
 
 #thebar {
-  border-bottom: 2px solid red;
+  text-align: center;
 
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 4px;
+
+  //centers the bar
+  left: 0; right: 0;
+  margin: auto; 
+  
 
 }
 #thebar form div {
@@ -83,6 +103,8 @@ nav ul li {
 
 #thebar label {
   margin-right: 5px;
+
+  font-weight: 300;
 }
 
 #thebar input[type=text] {
@@ -120,6 +142,17 @@ nav ul li {
 #thebar .submit:hover {
   color: black;
   border-color: black;
+}
+
+
+
+
+.connect {
+  margin-top: 60px;
+}
+.connect p a {
+  font-size: 1.6rem;
+  text-decoration: none;
 }
 
 
