@@ -8,5 +8,5 @@ User Experience Designer. Human. Company Starter. Mobile Lover.
 
 
 ###About this site
-I don't consider myself a developer, but 
+This site was made with Harp.js, HTML5, LESS, with Jade templating and copious Markdown for content.
 
