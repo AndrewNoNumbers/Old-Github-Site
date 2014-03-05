@@ -1,0 +1,3 @@
+[submodule "public/weeResume"]
+	path = public/weeResume
+	url = https://github.com/AndrewNoNumbers/weeResume.git
