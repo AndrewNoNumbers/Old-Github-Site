@@ -4,7 +4,7 @@
 The header of this blog is by California artist, Michael Martin. All other work is by me.
 
 ##Hi, I'm Andrew.
-User Experience Designer. Human. Company Starter. Mobile Lover.
+User Experience Designer. jsdilfj. lsidjflsdf. sdifjsd.
 
 
 ###About this site
