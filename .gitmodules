@@ -1,3 +1,6 @@
 [submodule "harpapp/public/weeResume"]
 	path = harpapp/public/weeResume
 	url = https://github.com/AndrewNoNumbers/weeResume.git
+[submodule "_harpapp/public/weeResume"]
+	path = _harpapp/public/weeResume
+	url = https://github.com/AndrewNoNumbers/weeResume.git
