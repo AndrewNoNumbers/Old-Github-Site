@@ -1,0 +1,1272 @@
+<head>
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,700,100,300,400italic' rel='stylesheet' type='text/css'>
+		
+	<style>
+		/*icon webfont*/
+
+/* entypo */
+[class*="entypo-"]:before {
+  font-family: 'entypo', sans-serif;
+}
+
+@-webkit-keyframes wiggle {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	3% {
+		-webkit-transform: rotate(-10deg);
+	}
+	6% {
+		-webkit-transform: rotate(10deg);
+	}
+	9% {
+		-webkit-transform: rotate(0deg);
+	}
+	to {
+		-webkit-transform: rotate(0deg);
+	}
+}
+@-webkit-keyframes spin {
+	from {
+		-webkit-transform: rotate(0deg);
+	}
+	25% {
+		-webkit-transform: rotate(90deg);
+	}
+	50% {
+		-webkit-transform: rotate(180deg);
+	}
+	75% {
+		-webkit-transform: rotate(270deg);
+	}
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+/*used for top-menu*/
+@-webkit-keyframes slide-down {
+	from {
+		-webkit-transform: translate(0, -150px);
+	}
+	55% {
+		-webkit-transform: translate(0, -150px);
+	}
+	to {
+		-webkit-transform: translate(0px, 0px);
+	}
+}
+@-moz-keyframes slide-down {
+	from {
+		-moz-transform: translate(0, -150px);
+	}
+	55% {
+		-moz-transform: translate(0, -150px);
+	}
+	to {
+		-moz-transform: translate(0px, 0px);
+	}
+}
+@keyframes slide-down {
+}
+
+
+@-webkit-keyframes rotate-intro {
+	from {
+		-webkit-transform: rotateX(-80deg);
+	}
+	to {
+		-webkit-transform: rotateX(0deg);
+	}
+}
+
+
+
+/*-------------------------*\
+	Global
+\*-------------------------*/
+
+body {
+	font-family: 'Roboto', Helvetica, sans-serif;	
+	background-color: #ECF0F1;
+	background: url('../img/white-sand-1440.jpg') fixed no-repeat;
+	background-size: cover;
+}	
+a {
+	color: #FFC400;
+	text-decoration: none;
+	padding-right: 4px;
+}
+a:hover {
+	color: #D89400;
+}
+/*wraps all the main sections besides header and footer*/
+#main {
+	width: 650px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 550px;
+	border-radius: 7px;
+	background-color: #fff;
+	padding-bottom: 10px;
+
+	z-index: 2;
+	position: relative; /*needa to figure out z-index*/
+
+	box-shadow: 0px 2px 10px 0px rgba(0,0,0,0.15),
+                 0px 2px 2px 0px rgba(0,0,0,0.1);
+}
+
+.two-col {
+	-webkit-column-count: 2;
+}
+
+ul {
+	-webkit-margin-before: 0;
+	-webkit-margin-after: 0;
+}
+/*clears the webkit default ul margin*/
+
+.watermark {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	/*
+	-webkit-animation-name: spin;
+	-webkit-animation-duration: 40s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	/*-webkit-animation-timing-function: ease-in-out;*/
+}
+.watermark img {
+	height: 100px;
+	width: 100px;
+}
+
+.easter-egg {
+	display: none;
+	position: absolute;
+	top: 400px;
+	right: 0;
+}
+
+.legend {
+	color: #666;
+	display: block;
+	text-align: center;
+	font-weight: 300;
+	font-size: 0.9em;
+	margin-top: 8px;
+}
+
+h4 {
+	font-weight: 400;
+}
+
+.strikethrough {
+	text-decoration:line-through;
+}
+
+/*-------------------------*\
+	Nav Bar w/ scrollspy
+\*-------------------------*/
+
+/*same contact info but at the top*/
+.top-contact {
+	text-align: center;
+	padding: 7px 0 8px 0;
+
+	position: fixed;
+    z-index: 9999;
+    left: 0;
+    right: 0;
+    top: 70px;
+
+    -webkit-animation-name: slide-down;
+	-webkit-animation-delay: 0s;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: 1;
+ 	-webkit-animation-timing-function: ease-in-out;
+ 	-moz-animation-name: slide-down;
+	-moz-animation-duration: 1s;
+	-moz-animation-iteration-count: 1;
+ 	-moz-animation-timing-function: ease-in-out;
+ 	animation-name: slide-down;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+ 	animation-timing-function: ease-in-out;
+}
+
+/*formerly powered by, designed and coded by me stuff*/
+.imprint { 
+	border-bottom: 2px solid #FFC400;
+	box-shadow: 0px 2px 0px 1px rgba(0,0,0,0.03);
+	background-color: #fff;
+
+	text-align: center;
+	font-weight: 300;
+	padding: 7px 0 8px 0;
+
+	position: fixed;
+    z-index: 999;
+    left: 0;
+    right: 0;
+    top: 0px;
+
+    -webkit-animation-name: slide-down;
+	-webkit-animation-delay: 0s;
+	-webkit-animation-duration: 1.5s;
+	-webkit-animation-iteration-count: 1;
+ 	-webkit-animation-timing-function: ease-in-out;
+ 	-moz-animation-name: slide-down;
+	-moz-animation-duration: 1s;
+	-moz-animation-iteration-count: 1;
+ 	-moz-animation-timing-function: ease-in-out;
+ 	animation-name: slide-down;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+ 	animation-timing-function: ease-in-out;
+}
+/*as bar*/
+
+
+/*.imprint {
+	text-align: center;
+	font-size: 0.8em;
+	font-weight: 300;
+	padding: 3px 0 6px 0;
+
+	position: fixed;
+    left: 0;
+    right: 0;
+    top: 60px;
+
+	color: #A2A2A2;
+	background-color: #fff;
+	border-radius: 7px;
+	width: 650px;
+	margin-left: auto;
+	margin-right: auto;
+
+	-webkit-animation-name: slide-down;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-iteration-count: 1;
+ 	-webkit-animation-timing-function: ease-in-out;
+ 	-moz-animation-name: slide-down;
+	-moz-animation-duration: 1s;
+	-moz-animation-iteration-count: 1;
+ 	-moz-animation-timing-function: ease-in-out;
+ 	animation-name: slide-down;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+ 	animation-timing-function: ease-in-out;
+} /*as a notification sort of pill shape dialog*/
+.imprint img {
+	max-height: 30px;
+	border-radius: 0;
+	vertical-align: -7px;
+	padding: 0 2px;
+}
+
+
+
+#top-menu {
+	background-color: #FFC400;
+	font-size: 16px;
+
+	border-bottom: 2px solid #D89400;
+	box-shadow: 0px 2px 0px 1px rgba(0,0,0,0.03); /* tumblr logoish hard & close */
+
+
+	text-align: center;
+	padding: 7px 0 8px 0;
+
+    position: fixed;
+    z-index: 99999;
+    left: 0;
+    right: 0;
+    top: -50px;
+
+    /*-webkit-animation-name: slide-down;
+	-webkit-animation-duration: 3s;
+	-webkit-animation-iteration-count: 1;
+ 	-webkit-animation-timing-function: ease-in-out;
+ 	-moz-animation-name: slide-down;
+	-moz-animation-duration: 1s;
+	-moz-animation-iteration-count: 1;
+ 	-moz-animation-timing-function: ease-in-out;
+ 	animation-name: slide-down;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+ 	animation-timing-function: ease-in-out;*/
+}
+#top-menu li {
+	display: inline-block;
+	list-style: none;
+	width: 100px;
+}
+#top-menu a {
+    display: block;
+    padding: 5px 25px;
+    /*border-top: 3px solid #D89400;*/
+    background-color: #333;
+    border-radius: 5px;
+    color: #fff;
+    -webkit-transition: 1s all ease;
+    -moz-transition: 1s all ease;
+    transition: 1s all ease;
+}
+#top-menu li.active a {
+    /*border-top: 3px solid #fff;*/
+    background-color: #fff;
+    color: #333;
+}
+
+#top-menu li:hover {
+	/*-webkit-animation-name: wiggle;
+	-webkit-animation-duration: 10s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-timing-function: linear;
+	/*-webkit-animation-timing-function: ease-in-out;*/
+
+	text-shadow: 0px 1px 10px rgba(255,255,255,0.7); /* white glow */
+}
+
+#top-menu #go-top a, #go-bottom a {
+	background: none;
+}
+
+#go-top:hover, #go-bottom:hover {
+	
+}
+
+/*-------------------------*\
+	Section Formatting
+\*-------------------------*/
+
+section {
+	padding: 10px 25px;
+}
+section img { /*temporary fix, actually gotta trim down the images*/
+	max-width: 300px;
+	max-height: 90px;
+
+	 /*should make it not universal but instead specific to sections*/
+	border-radius: 4px;
+}
+.need-padding {
+	border: 5px solid white;
+}
+
+.yellow {
+	background-color: #FFC400;
+	padding: 5px 10px 30px 30px;
+	border-bottom-left-radius: 3px;
+	border-bottom-right-radius: 3px;
+}
+
+section h1 {
+	/*could experiement with making the h1 cut into the header background
+	font-size: 34px;
+	color: #fff;
+
+	height: 31px;
+
+	border-top-left-radius: 4px;
+	border-top-right-radius: 4px;*/
+
+	background-color: #FFC400;
+	padding: 5px 10px;
+	border-radius: 3px;
+	
+	font-weight: 400;
+
+	border-top: 1px solid #FFF2C5;
+	border-bottom: 2px solid #D89400;
+	box-shadow: 0px 2px 0px 1px rgba(0,0,0,0.05); /* tumblr logoish hard & close */
+
+	text-shadow: 0px -1px 0px rgba(0,0,0,0.2);
+}
+
+section h2 {
+	font-weight: 400;
+	margin: 8px 0;
+}
+
+/*for example "Completed Coursera courses"*/
+section h3 {
+	font-size: 1em;
+	font-weight: 400;
+}
+
+/*the things under Completed Coursera courses*/
+section ul li {
+	font-size: 0.9em;
+}
+
+section .description {
+	font-size: 0.8em;
+}
+
+
+/*-------------------------*\
+	Header Block
+\*-------------------------*/
+
+header {
+	top: 120px;
+
+	z-index: 1;
+	position: fixed;
+
+	width: 770px;
+
+	left: 0;
+	right: 0;
+	margin-left: auto;
+	margin-right: auto;
+
+	-webkit-animation-name: rotate-intro;
+	-webkit-animation-duration: 2s;
+	-webkit-animation-iteration-count: 1;
+}
+header h1 {
+	font-size: 130px;
+	text-align: center;
+	color: #fff;
+	background: none;
+	margin-bottom: -25px;
+
+	font-weight: 700;
+
+	/*border-top: 3px solid white;*/
+
+
+	/*text-shadow: 0px 0px 6px rgba(255,255,255,0.7); /* white glow */
+
+
+	/*text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+	             0px 8px 13px rgba(0,0,0,0.1),
+	             0px 18px 23px rgba(0,0,0,0.1); /* tumblr logoish hard & close */
+
+
+	/*text-shadow: 0px 3px 0px #b2a98f,
+                 0px 14px 10px rgba(0,0,0,0.15),
+                 0px 24px 2px rgba(0,0,0,0.1),
+                 0px 34px 30px rgba(0,0,0,0.1); /* milk plastic */
+
+}
+header h2 {
+	text-align: right;
+	color: #fff;
+	font-weight: 700;
+	font-size: 29px;
+	margin: 6px 0 20px 0;
+	padding-right: 5px;
+	padding-bottom: 22px;
+
+	/*border-bottom: 3px solid white;*/
+}
+#bigquote {
+	color: #fff;
+	text-align: center;
+	width: 620px;
+	margin-right: auto;
+	margin-left: auto;
+
+}
+
+.attribution {
+	font-weight: 300;
+}
+
+
+/*has nothing to do with header, just an anchor*/
+#top {
+	position: absolute;
+	/*top: 466px;*/
+	top: 0;
+}
+
+
+
+
+/*-------------------------*\
+	Specific Sections
+\*-------------------------*/
+
+/*should use nested selectors*/
+
+#education, #other, #examples {
+	background-color: #333333;
+	color: #fff;
+}
+#education .episode, #other .episode, #examples .episode {
+
+}
+#education .three, #other .three, #examples .three {
+	color: #A2A2A2;
+}
+#education h1, #other h1, #examples h1 {
+	color: #333333;
+}
+#education img, #other img, #examples img {
+	border-radius: 3px;
+}
+#education .title, #other .title, #examples .title {
+	color: #fff;
+}
+#education .location, #other .location, #examples .location {
+	color: #fff;
+}
+
+#about, #experience, #examples, #therest {
+
+}
+
+#other .episode {
+	margin: 25px 0;
+}
+
+
+
+
+/*the noodlesandbrain and designtox links*/
+.sideprojects li {
+	display: inline-block;
+	max-width: 45%;
+}
+
+/*the featured works showcase*/
+#examples ul {
+	display: block;
+	text-align: center;
+	padding-left: 0;
+
+}
+#examples li {
+	display: inline-block;
+	text-align: center;
+	padding: 0px 0px;
+}
+#examples img {
+	/*should customize image sizing to something I like*/
+	max-height: 150px;
+	max-width: 100px; /*three per row*/
+	/*max-width: 200px; /*two per row*/
+	/*max-width: 500px; /*single*/
+
+	width: 100px;
+}
+#examples figure {
+	margin-bottom: 30px;
+}
+#examples figcaption {
+	margin: 5px 0 0 0;
+}
+#examples h5 {
+	padding: 120px 0;
+	font-weight: 300;
+}
+
+.louvers {
+	position: relative;
+	padding-bottom: 1px;
+}
+div .process {
+	margin: 80px 0;
+	position: relative;
+}
+
+#skills .louvers li, #qualities li {
+	list-style: none;
+
+
+	border: 2px solid white;
+	background-color: #FFC400;
+	color: white;
+	border-radius: 3px;
+
+	padding: 2px 4px;
+	margin: 2px 0;
+	display: inline-block;*/
+}
+
+
+#therest {
+	/*width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+
+	background-color: #34495E;
+	padding: 25px;
+	border-radius: 4px;
+	margin-bottom: 40px;
+	*/
+}
+
+
+
+
+
+/*-------------------------*\
+	Venn Diagrams
+\*-------------------------*/
+
+
+.venn {
+	float: left;
+
+	/*gets overridden by individual venns, but serves as baseline*/
+    width: 140px;
+    height: 140px;
+
+    border-radius: 500px;
+
+    color: #fff;
+    text-align: center;
+    vertical-align: middle;
+}
+.venn h2 {
+	font-size: 1em;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 40%;
+}
+
+
+
+/*specific venn diagrams*/
+.vennwrap {
+	position: relative; /*serves as a container for the venn circles to be positioned absolute;*/
+	max-height: 440px;
+	min-height: 440px;	
+
+	background-color: #333333;
+	color: #fff;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.fineprint {
+	position: absolute;
+	bottom: 0;
+	right: 10px;
+	text-align: right;
+	font-size: 0.7em;
+	color: white;
+}
+.fineprint a {
+	color: white;
+}
+
+#venn-understanding { 
+	background-color: rgba(0,255,0,0.5);
+	height: 220px;
+	width: 220px; 
+
+	position: absolute;
+	top: 215px;
+	left: 180px;
+	z-index: 9;
+}
+
+#venn-prototyping { 
+	background-color: rgba(255,0,0,0.5); 
+	height: 220px;
+	width: 220px;
+
+	position: absolute;
+	top: 70px;
+	left: 230px;
+	z-index: 8;
+}
+
+#venn-usability { 
+	background-color: rgba(0,0,255,0.5); 
+	height: 220px;
+	width: 220px;
+
+	position: absolute;
+	top: 150px;
+	left: 260px;
+	z-index: 6;
+}
+
+#venn-graphic { 
+	background-color: rgba(255,255,0,0.5); 
+	height: 220px;
+	width: 220px;
+
+	position: absolute;
+	top: 150px;
+	left: 100px;
+	z-index: 7;
+}
+
+#venn-product { 
+	background-color: rgba(155,0,255,0.5); 
+	height: 220px;
+	width: 220px;
+
+	position: absolute;
+	top: 70px;
+	left: 130px;
+	z-index: 5;
+}
+
+
+.titlecircle {
+	position: absolute;
+	right: 90px;
+	margin-top: -80px;
+
+	border: 1px solid inherit;
+
+	display: none;
+}
+
+
+/*just to keep as sample
+#venn4 { 
+	background-color: rgba(255,255,0,0.5); 
+	margin-left: -30px;
+}
+#venn5:before { 
+	content: ''; 
+	position: absolute; 
+	left: 10px;
+	padding-top: 40%;
+}
+#venn5 { 
+	background-color: rgba(255,255,0,0.5); 
+	margin-left: -30px;
+}
+*/
+
+
+
+
+
+/*-------------------------*\
+	Small Elements
+\*-------------------------*/
+
+hr {
+	border: 0;
+    height: 1px;
+    background-color: #ECF0F1;
+    margin: 30px 20px;
+}
+
+.class-date {
+	/*background-color: #BDC3C7;
+	color: #fff;
+	padding: 2px 4px;
+	border-radius: 3px;
+	display: inline;
+	font-size: 90%;*/
+	display: none;
+}
+
+/*for highlighting accomplishments and making resume more useful at-a-glance*/
+.statistic {
+
+}
+
+
+.item {
+	border: 2px solid #2ECC71;
+	color: #fff;
+	padding: 2px 4px;
+	margin: 2px 0;
+	border-radius: 3px;
+	display: inline-block;
+}
+
+/*score display*/
+.holder {
+    width: 82px;
+    height: 96px;
+    position: relative;
+    margin: 5px 15px 5px 0;
+    border: 2px solid #2ECC71;
+    border-radius: 5px;
+    display: inline-block;
+}
+.label {
+    width: 82px;
+    height: 17px;
+    background-color: #27AE60;
+}
+.label p {
+	text-align: center;
+    color: #fff;
+    font-size: 11px;
+    font-weight: 600;
+}
+.number {
+	position: absolute;
+	top: 30%;
+    width: 82px;
+    height: 60px;
+}
+.number p {
+    text-align: center;
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: 5px;
+}
+
+
+
+/*-------------------------*\
+	Episode divs (each experience)
+\*-------------------------*/
+.dates {
+	background-color: #BDC3C7;
+	color: #fff;
+	padding: 2px 4px;
+	margin-bottom: 2px;
+	border-radius: 3px;
+	display: inline-block;
+	font-size: 0.9em;
+
+}
+.title {
+	color: #000;
+}
+.institution {
+	color: #8A8A8A;
+}
+.institution:before {
+	content: "at ";
+}
+.sideprojects .institution:before {
+	content: "of ";
+}
+.location {
+	color: #000;
+	font-weight: 300;
+}
+
+dl {
+    margin-bottom: 20px;
+}
+
+dt {
+    font-weight: bold;  
+    padding: 6px 0;
+    float: left;
+	min-width: 50%;
+}
+
+dd {
+    margin-top: 5px;
+    margin-left: 0;
+    color: #757575;
+}
+
+.episode {
+	position: relative;
+	margin: 50px 0 50px 0px;
+
+	padding: 18px 18px 8px 18px;
+	border: 1px solid #FFC400;
+	border-radius: 8px;
+}
+
+/*the title, meta info, and logo bar*/
+.one {
+	/*max-width: 38%;*/
+	/*background-color: blue;*/
+}
+/*the logo image only*/
+.two {
+	position: absolute;
+	top: 18px;
+	right: 18px;
+
+	/*margin-left: 38%;
+	text-align: right;
+	min-height: 90px; /*four lines of text*/
+	/*background-color: red;*/
+}
+/*the description*/
+.three {
+	color: #757575;
+}
+
+
+.panels {
+	margin: 50px 5px 20px 5px;
+}
+
+
+
+/*-------------------------*\
+		Contact Card
+\*-------------------------*/
+
+#personal_info {
+	display: none; /*need to find a better way to dispaly it*/
+
+	position: fixed;
+	top:60px;
+	left:10px;
+
+	width: 300px;
+	height: 160px;
+
+	margin-left: auto;
+	margin-right: auto;
+
+	border-radius: 4px;
+	padding: 10px;
+	background-color: white;
+}
+#personal_info ul {
+	list-style: none;
+}
+#picme {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100px;
+}
+.cardleft {
+	width: 40%;
+	float: left;
+	border-right: 1px solid gray;
+}
+.cardright {
+	padding-left: 100px; /*why*/
+}
+.cardright img {
+	border: 0;
+	border-radius: 0;
+}
+
+
+
+/*-------------------------*\
+		Final-Block
+\*-------------------------*/
+
+
+#final-block {
+	position: relative;
+	/*width: 600px;*/
+	height: 510px; /*may need to be changed*/
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30px;
+	margin-top: 40px;
+
+	/*background-color: #34495E;*/
+	background: url('../img/LL208-smoothedge.jpg') no-repeat center #000;
+	/*background-size: cover; cool technique but not needed here*/
+	padding: 0px;
+
+	/*border-radius: 7px;*/
+}
+
+#bottom-header {
+	position: absolute;
+	top: 140px;
+	left: 0;
+}
+#bottom-header h1, #bottom-header h2 {
+	margin-top: 0;
+	color: rgba(255,255,255,0.2);
+}
+#bottom-header h1:hover, #bottom-header h2:hover {
+	color: white;
+}
+
+
+
+.letmeknow {
+	position: absolute;
+	margin: auto;
+	left: 0; bottom: 28px; right: 0;
+
+
+	color: white;
+
+	text-align: center;
+	padding: 15px 0;
+
+}
+.letmeknow object {
+	margin-bottom: 30px;
+}
+.letmeknow h4 {
+	font-weight: 400;
+}
+.contact-info li {
+	display: inline-block;
+	padding: 0 10px;
+	font-size: 1em;
+}
+.contact-info li a {
+	color: white;
+	border-radius: 50px;
+	padding: 4px 8px 5px 8px;
+	border: 2px solid rgba(255,255,255,0.6);
+	background-color: rgba(255,255,255,0.2);
+}
+
+
+.letmeknow img {
+	border: 0;
+	border-radius: 0;
+}
+
+
+.entypo-phone, #lmk-phone {
+	color: #00BB10;
+}
+.entypo-mail, #lmk-mail {	
+	color: #FFC400;
+}
+.entypo-twitter, #lmk-twitter {
+	color: #55ACEE;
+}
+.entypo-linkedin-circled, #lmk-linkedin {
+	color: #0976b4;
+}
+.entypo-instagrem, #lmk-instagram {
+	color: #D44E00;
+}
+
+.contact-info li a:hover {
+	-webkit-transition: 0.5s all ease-in-out;
+    -moz-transition: 0.5s all ease-in-out;
+    transition: 0.5s all ease-in-out;
+   	border-color: white;
+}
+
+footer {
+	text-align: center;
+	font-size: 0.8em;
+	margin-bottom: 30px;
+	color: white;
+	font-weight: 300;
+}
+footer a {
+	color: white;
+}
+
+
+/*-------------------------*\
+		Responsive
+\*-------------------------*/
+
+
+
+@media (max-width: 620px), only screen and (min-device-width: 320) and (max-device-width: 480px) {
+	#main {
+		width: 310px;
+	}
+}
+
+
+
+/*the following gets rid of background image on iOS devices, because they don't seem to perform well*/
+
+@media screen and (min-device-width : 320px) and (max-device-width : 1024px)  { 
+	body {
+		background: none;
+		background-color: #ECF0F1;
+	}
+	#top-menu li {
+		width: 50px;
+	}
+	#top-menu a {
+	    padding: 5px 0;
+	    border-radius: 5px;
+
+	}
+	header:before {
+		content: 'I have not tested on mobile, sorry. Please try visting in Chrome on your computer.';
+		display: block;
+		text-align: center;
+		padding: 20px;
+		color: red;
+		font-size: 1.1em;
+		position: absolute;
+	}
+	
+}
+
+
+
+
+	</style>
+</head>
+
+
+
+
+
+
+
+
+
+
+<body id="skrollr-body">
+
+
+<div id="main">
+
+<section id="skills">
+	<h1 data-start="transform:translate(0px,0px);" data-end="transform:translate(300px,270px);">Skills <span class="entypo-lamp"></span></h1> 
+
+	<section class="vennwrap">
+		<h2>What is UX design anyway? (in my experience) </h2>
+
+		<!--transform x is calculated for straight left align <div id="venn-understanding" class="venn" data-100-top-top="transform:translate(0px,0px);" data--100-top-bottom="transform:translate(-190px,270px);">
+			<h2>Understanding and ideation</h2>
+		</div>
+		<div id="venn-prototyping" class="venn" data-100-top-top="transform:translate(0px,0px);" data--100-top-bottom="transform:translate(-240px,600px);">
+			<h2>Prototyping</h2>
+		</div>
+		<div id="venn-usability" class="venn" data-100-top-top="transform:translate(0px,0px);" data--100-top-bottom="transform:translate(-270px,730px);">
+			<h2>Usability and optimization</h2>
+		</div>
+		<div id="venn-graphic" class="venn" data-100-top-top="transform:translate(0px,0px);" data--100-top-bottom="transform:translate(-110px,910px);">
+			<h2>Visual design</h2>
+		</div>
+		<div id="venn-product" class="venn" data-100-top-top="transform:translate(0px,0px);" data--100-top-bottom="transform:translate(-140px,1200px);">
+			<h2>Shipping product</h2>
+		</div>-->
+
+		<div id="venn-understanding" class="venn" data-100-top-top="transform[swing]:translate(0px,0px);" data-100-top-bottom="transform[swing]:translate(300px,270px);">
+			<h2>Understanding and ideation</h2>
+		</div>
+		<div id="venn-prototyping" class="venn" data-100-top-top="transform[swing]:translate(0px,0px);" data--100-top-bottom="transform[swing]:translate(-290px,600px);">
+			<h2>Prototyping</h2>
+		</div>
+		<div id="venn-usability" class="venn" data-100-top-top="transform[swing]:translate(0px,0px);" data--100-top-bottom="transform[swing]:translate(230px,730px);">
+			<h2>Usability and optimization</h2>
+		</div>
+		<div id="venn-graphic" class="venn" data-100-top-top="transform[swing]:translate(0px,0px);" data--100-top-bottom="transform[swing]:translate(-160px,910px);">
+			<h2>Visual design</h2>
+		</div>
+		<div id="venn-product" class="venn" data-100-top-top="transform[swing]:translate(0px,0px);" data--100-top-bottom="transform[swing]:translate(360px,1230px);">
+			<h2>Shipping it</h2>
+		</div>
+		<!--<div class="fineprint">
+			<p>*Don't see anything? Try resizing your browser window a bit. This is one bug I haven't figured out yet.</p>
+		</div>-->
+
+
+	</section>
+
+	
+	<div class="yellow">
+
+	<div class="louvers">
+
+		<h2>What I can do</h2>
+
+		<!--<div class="process">
+			<ul>
+				<li>taking ownership of products from research to launch</li>
+				<li>ensuring cohesive design direction across multiple user touch points</li>
+				<li>pioneering new design concepts where approriate</li>
+				<li>promoting design principles and best practices</li>			
+				<li>aware of current design patterns and trends</li>						
+			</ul>
+		</div>-->
+
+		<div class="process">
+			<div id="venn-understanding" class="titlecircle venn">
+				<h2>Understanding and ideation</h2>
+			</div>
+			<ul>
+				<li>storyboards, personas, wireframing, card sorts</li>
+				<li>user interviews</li>
+				<li>user experience research, planning, and design</li>
+				<li>building a logical information architecture</li>
+				<li>finding real solutions using good, human-centered design</li>		
+			</ul>
+		</div>
+
+		<div class="process">
+			<div id="venn-prototyping" class="titlecircle venn">
+				<h2>Prototyping</h2>
+			</div>
+			<ul>
+				<li>mockups (Balsamiq Mockups, Photoshop, Illustrator)</li>
+				<li>paper prototypes</li>
+				<li>prototyping in code</li>
+				<li>HTML5, CSS3, jQuery</li>
+				<li>git</li>
+				<li>interaction design</li>
+				<li>currently experimenting with some newer tools (such as Adobe Edge, Google Web Designer, Facebook's Origami)</li>
+				<li>iterating with users as well as the development team</li>	
+			</ul>
+		</div>
+
+		<div class="process">
+			<div id="venn-usability" class="titlecircle venn">
+				<h2>Usability and optimization</h2>
+			</div>
+			<ul>
+				<li>prioritizing for engagement</li>
+				<li>actionable design</li>
+				<li>the science behind design patterns</li>
+				<li>knowing the "why" of design decisions</li>
+				<li>usability testing</li>
+				<li>Google Analytics</li>
+			</ul>
+		</div>
+
+		<div class="process">
+			<div id="venn-graphic" class="titlecircle venn">
+				<h2>Visual design</h2>
+			</div>
+			<ul>
+				<li>UI design</li>
+				<li>color, layout, icons, etc.</li>
+				<li>building style guides to maintain consistency across works</li>
+				<li>aesthetics sensibility</li>
+				<li>raster, vector, and layout design (Photoshop, Illustrator, InDesign)</li>
+				<li>presentation design</li>
+				<li>coordinating marketing collateral</li>
+			</ul>
+		</div>
+
+		<div class="process">
+			<div id="venn-product" class="titlecircle venn">
+				<h2>Shipping it</h2>
+			</div>
+			<ul>						
+				<!--<li>creating useful specifications</li>-->
+				<li>designing delightful experiences that are technically feasible</li>
+				<li>supporting the development team in implementation</li>
+				<li>ensuring cohesive design direction across multiple customer touch points</li>
+				<li>promoting design principles and best practices</li>	
+				<li>have experience in lean startup and some software development methodologies</li>
+			</ul>
+		</div>
+	</div>
+	</div>
+</section>
+
+</div>
+
+<script type="text/javascript">
+	/*! skrollr 0.6.21 (2014-01-06) | Alexander Prinzhorn - https://github.com/Prinzhorn/skrollr | Free to use under terms of MIT license */
+(function(e,t,r){"use strict";function n(r){if(o=t.documentElement,a=t.body,K(),it=this,r=r||{},ut=r.constants||{},r.easing)for(var n in r.easing)U[n]=r.easing[n];yt=r.edgeStrategy||"set",ct={beforerender:r.beforerender,render:r.render},ft=r.forceHeight!==!1,ft&&(zt=r.scale||1),pt=r.mobileDeceleration||E,gt=r.smoothScrolling!==!1,vt=r.smoothScrollingDuration||x,dt={targetTop:it.getScrollTop()},_t=(r.mobileCheck||function(){return/Android|iPhone|iPad|iPod|BlackBerry/i.test(navigator.userAgent||navigator.vendor||e.opera)})(),_t?(st=t.getElementById("skrollr-body"),st&&at(),X(),Ct(o,[y,S],[T])):Ct(o,[y,b],[T]),it.refresh(),St(e,"resize orientationchange",function(){var e=o.clientWidth,t=o.clientHeight;(t!==$t||e!==Lt)&&($t=t,Lt=e,Mt=!0)});var i=Y();return function l(){Z(),bt=i(l)}(),it}var o,a,i=e.skrollr={get:function(){return it},init:function(e){return it||new n(e)},VERSION:"0.6.21"},l=Object.prototype.hasOwnProperty,s=e.Math,c=e.getComputedStyle,f="touchstart",u="touchmove",p="touchcancel",m="touchend",g="skrollable",v=g+"-before",d=g+"-between",h=g+"-after",y="skrollr",T="no-"+y,b=y+"-desktop",S=y+"-mobile",w="linear",k=1e3,E=.004,x=200,A="start",F="end",C="center",D="bottom",H="___skrollable_id",N=/^(?:input|textarea|button|select)$/i,P=/^\s+|\s+$/g,V=/^data(?:-(_\w+))?(?:-?(-?\d*\.?\d+p?))?(?:-?(start|end|top|center|bottom))?(?:-?(top|center|bottom))?$/,z=/\s*([\w\-\[\]]+)\s*:\s*(.+?)\s*(?:;|$)/gi,O=/^([a-z\-]+)\[(\w+)\]$/,q=/-([a-z])/g,I=function(e,t){return t.toUpperCase()},L=/[\-+]?[\d]*\.?[\d]+/g,$=/\{\?\}/g,M=/rgba?\(\s*-?\d+\s*,\s*-?\d+\s*,\s*-?\d+/g,B=/[a-z\-]+-gradient/g,_="",G="",K=function(){var e=/^(?:O|Moz|webkit|ms)|(?:-(?:o|moz|webkit|ms)-)/;if(c){var t=c(a,null);for(var n in t)if(_=n.match(e)||+n==n&&t[n].match(e))break;if(!_)return _=G="",r;_=_[0],"-"===_.slice(0,1)?(G=_,_={"-webkit-":"webkit","-moz-":"Moz","-ms-":"ms","-o-":"O"}[_]):G="-"+_.toLowerCase()+"-"}},Y=function(){var t=e.requestAnimationFrame||e[_.toLowerCase()+"RequestAnimationFrame"],r=Nt();return(_t||!t)&&(t=function(t){var n=Nt()-r,o=s.max(0,1e3/60-n);return e.setTimeout(function(){r=Nt(),t()},o)}),t},R=function(){var t=e.cancelAnimationFrame||e[_.toLowerCase()+"CancelAnimationFrame"];return(_t||!t)&&(t=function(t){return e.clearTimeout(t)}),t},U={begin:function(){return 0},end:function(){return 1},linear:function(e){return e},quadratic:function(e){return e*e},cubic:function(e){return e*e*e},swing:function(e){return-s.cos(e*s.PI)/2+.5},sqrt:function(e){return s.sqrt(e)},outCubic:function(e){return s.pow(e-1,3)+1},bounce:function(e){var t;if(.5083>=e)t=3;else if(.8489>=e)t=9;else if(.96208>=e)t=27;else{if(!(.99981>=e))return 1;t=91}return 1-s.abs(3*s.cos(1.028*e*t)/t)}};n.prototype.refresh=function(e){var n,o,a=!1;for(e===r?(a=!0,lt=[],Bt=0,e=t.getElementsByTagName("*")):e=[].concat(e),n=0,o=e.length;o>n;n++){var i=e[n],l=i,s=[],c=gt,f=yt;if(i.attributes){for(var u=0,p=i.attributes.length;p>u;u++){var m=i.attributes[u];if("data-anchor-target"!==m.name)if("data-smooth-scrolling"!==m.name)if("data-edge-strategy"!==m.name){var v=m.name.match(V);if(null!==v){var d={props:m.value,element:i};s.push(d);var h=v[1];h&&(d.constant=h.substr(1));var y=v[2];/p$/.test(y)?(d.isPercentage=!0,d.offset=(0|y.slice(0,-1))/100):d.offset=0|y;var T=v[3],b=v[4]||T;T&&T!==A&&T!==F?(d.mode="relative",d.anchors=[T,b]):(d.mode="absolute",T===F?d.isEnd=!0:d.isPercentage||(d.offset=d.offset*zt))}}else f=m.value;else c="off"!==m.value;else if(l=t.querySelector(m.value),null===l)throw'Unable to find anchor target "'+m.value+'"'}if(s.length){var S,w,k;!a&&H in i?(k=i[H],S=lt[k].styleAttr,w=lt[k].classAttr):(k=i[H]=Bt++,S=i.style.cssText,w=Ft(i)),lt[k]={element:i,styleAttr:S,classAttr:w,anchorTarget:l,keyFrames:s,smoothScrolling:c,edgeStrategy:f},Ct(i,[g],[])}}}for(Et(),n=0,o=e.length;o>n;n++){var E=lt[e[n][H]];E!==r&&(J(E),et(E))}return it},n.prototype.relativeToAbsolute=function(e,t,r){var n=o.clientHeight,a=e.getBoundingClientRect(),i=a.top,l=a.bottom-a.top;return t===D?i-=n:t===C&&(i-=n/2),r===D?i+=l:r===C&&(i+=l/2),i+=it.getScrollTop(),0|i+.5},n.prototype.animateTo=function(e,t){t=t||{};var n=Nt(),o=it.getScrollTop();return mt={startTop:o,topDiff:e-o,targetTop:e,duration:t.duration||k,startTime:n,endTime:n+(t.duration||k),easing:U[t.easing||w],done:t.done},mt.topDiff||(mt.done&&mt.done.call(it,!1),mt=r),it},n.prototype.stopAnimateTo=function(){mt&&mt.done&&mt.done.call(it,!0),mt=r},n.prototype.isAnimatingTo=function(){return!!mt},n.prototype.setScrollTop=function(t,r){return ht=r===!0,_t?Gt=s.min(s.max(t,0),Vt):e.scrollTo(0,t),it},n.prototype.getScrollTop=function(){return _t?Gt:e.pageYOffset||o.scrollTop||a.scrollTop||0},n.prototype.getMaxScrollTop=function(){return Vt},n.prototype.on=function(e,t){return ct[e]=t,it},n.prototype.off=function(e){return delete ct[e],it},n.prototype.destroy=function(){var e=R();e(bt),kt(),Ct(o,[T],[y,b,S]);for(var t=0,n=lt.length;n>t;t++)ot(lt[t].element);o.style.overflow=a.style.overflow="auto",o.style.height=a.style.height="auto",st&&i.setStyle(st,"transform","none"),it=r,st=r,ct=r,ft=r,Vt=0,zt=1,ut=r,pt=r,Ot="down",qt=-1,Lt=0,$t=0,Mt=!1,mt=r,gt=r,vt=r,dt=r,ht=r,Bt=0,yt=r,_t=!1,Gt=0,Tt=r};var X=function(){var n,i,l,c,g,v,d,h,y,T,b,S;St(o,[f,u,p,m].join(" "),function(e){var o=e.changedTouches[0];for(c=e.target;3===c.nodeType;)c=c.parentNode;switch(g=o.clientY,v=o.clientX,T=e.timeStamp,N.test(c.tagName)||e.preventDefault(),e.type){case f:n&&n.blur(),it.stopAnimateTo(),n=c,i=d=g,l=v,y=T;break;case u:N.test(c.tagName)&&t.activeElement!==c&&e.preventDefault(),h=g-d,S=T-b,it.setScrollTop(Gt-h,!0),d=g,b=T;break;default:case p:case m:var a=i-g,w=l-v,k=w*w+a*a;if(49>k){if(!N.test(n.tagName)){n.focus();var E=t.createEvent("MouseEvents");E.initMouseEvent("click",!0,!0,e.view,1,o.screenX,o.screenY,o.clientX,o.clientY,e.ctrlKey,e.altKey,e.shiftKey,e.metaKey,0,null),n.dispatchEvent(E)}return}n=r;var x=h/S;x=s.max(s.min(x,3),-3);var A=s.abs(x/pt),F=x*A+.5*pt*A*A,C=it.getScrollTop()-F,D=0;C>Vt?(D=(Vt-C)/F,C=Vt):0>C&&(D=-C/F,C=0),A*=1-D,it.animateTo(0|C+.5,{easing:"outCubic",duration:A})}}),e.scrollTo(0,0),o.style.overflow=a.style.overflow="hidden"},j=function(){var e,t,r,n,a,i,l,c,f,u,p,m=o.clientHeight,g=xt();for(c=0,f=lt.length;f>c;c++)for(e=lt[c],t=e.element,r=e.anchorTarget,n=e.keyFrames,a=0,i=n.length;i>a;a++)l=n[a],u=l.offset,p=g[l.constant]||0,l.frame=u,l.isPercentage&&(u*=m,l.frame=u),"relative"===l.mode&&(ot(t),l.frame=it.relativeToAbsolute(r,l.anchors[0],l.anchors[1])-u,ot(t,!0)),l.frame+=p,ft&&!l.isEnd&&l.frame>Vt&&(Vt=l.frame);for(Vt=s.max(Vt,At()),c=0,f=lt.length;f>c;c++){for(e=lt[c],n=e.keyFrames,a=0,i=n.length;i>a;a++)l=n[a],p=g[l.constant]||0,l.isEnd&&(l.frame=Vt-l.offset+p);e.keyFrames.sort(Pt)}},W=function(e,t){for(var r=0,n=lt.length;n>r;r++){var o,a,s=lt[r],c=s.element,f=s.smoothScrolling?e:t,u=s.keyFrames,p=u[0].frame,m=u[u.length-1].frame,y=p>f,T=f>m,b=u[y?0:u.length-1];if(y||T){if(y&&-1===s.edge||T&&1===s.edge)continue;switch(Ct(c,[y?v:h],[v,d,h]),s.edge=y?-1:1,s.edgeStrategy){case"reset":ot(c);continue;case"ease":f=b.frame;break;default:case"set":var S=b.props;for(o in S)l.call(S,o)&&(a=nt(S[o].value),i.setStyle(c,o,a));continue}}else 0!==s.edge&&(Ct(c,[g,d],[v,h]),s.edge=0);for(var w=0,k=u.length-1;k>w;w++)if(f>=u[w].frame&&u[w+1].frame>=f){var E=u[w],x=u[w+1];for(o in E.props)if(l.call(E.props,o)){var A=(f-E.frame)/(x.frame-E.frame);A=E.props[o].easing(A),a=rt(E.props[o].value,x.props[o].value,A),a=nt(a),i.setStyle(c,o,a)}break}}},Z=function(){Mt&&(Mt=!1,Et());var e,t,n=it.getScrollTop(),o=Nt();if(mt)o>=mt.endTime?(n=mt.targetTop,e=mt.done,mt=r):(t=mt.easing((o-mt.startTime)/mt.duration),n=0|mt.startTop+t*mt.topDiff),it.setScrollTop(n,!0);else if(!ht){var a=dt.targetTop-n;a&&(dt={startTop:qt,topDiff:n-qt,targetTop:n,startTime:It,endTime:It+vt}),dt.endTime>=o&&(t=U.sqrt((o-dt.startTime)/vt),n=0|dt.startTop+t*dt.topDiff)}if(_t&&st&&i.setStyle(st,"transform","translate(0, "+-Gt+"px) "+Tt),ht||qt!==n){Ot=n>qt?"down":qt>n?"up":Ot,ht=!1;var l={curTop:n,lastTop:qt,maxTop:Vt,direction:Ot},s=ct.beforerender&&ct.beforerender.call(it,l);s!==!1&&(W(n,it.getScrollTop()),qt=n,ct.render&&ct.render.call(it,l)),e&&e.call(it,!1)}It=o},J=function(e){for(var t=0,r=e.keyFrames.length;r>t;t++){for(var n,o,a,i,l=e.keyFrames[t],s={};null!==(i=z.exec(l.props));)a=i[1],o=i[2],n=a.match(O),null!==n?(a=n[1],n=n[2]):n=w,o=o.indexOf("!")?Q(o):[o.slice(1)],s[a]={value:o,easing:U[n]};l.props=s}},Q=function(e){var t=[];return M.lastIndex=0,e=e.replace(M,function(e){return e.replace(L,function(e){return 100*(e/255)+"%"})}),G&&(B.lastIndex=0,e=e.replace(B,function(e){return G+e})),e=e.replace(L,function(e){return t.push(+e),"{?}"}),t.unshift(e),t},et=function(e){var t,r,n={};for(t=0,r=e.keyFrames.length;r>t;t++)tt(e.keyFrames[t],n);for(n={},t=e.keyFrames.length-1;t>=0;t--)tt(e.keyFrames[t],n)},tt=function(e,t){var r;for(r in t)l.call(e.props,r)||(e.props[r]=t[r]);for(r in e.props)t[r]=e.props[r]},rt=function(e,t,r){var n,o=e.length;if(o!==t.length)throw"Can't interpolate between \""+e[0]+'" and "'+t[0]+'"';var a=[e[0]];for(n=1;o>n;n++)a[n]=e[n]+(t[n]-e[n])*r;return a},nt=function(e){var t=1;return $.lastIndex=0,e[0].replace($,function(){return e[t++]})},ot=function(e,t){e=[].concat(e);for(var r,n,o=0,a=e.length;a>o;o++)n=e[o],r=lt[n[H]],r&&(t?(n.style.cssText=r.dirtyStyleAttr,Ct(n,r.dirtyClassAttr)):(r.dirtyStyleAttr=n.style.cssText,r.dirtyClassAttr=Ft(n),n.style.cssText=r.styleAttr,Ct(n,r.classAttr)))},at=function(){Tt="translateZ(0)",i.setStyle(st,"transform",Tt);var e=c(st),t=e.getPropertyValue("transform"),r=e.getPropertyValue(G+"transform"),n=t&&"none"!==t||r&&"none"!==r;n||(Tt="")};i.setStyle=function(e,t,r){var n=e.style;if(t=t.replace(q,I).replace("-",""),"zIndex"===t)n[t]=isNaN(r)?r:""+(0|r);else if("float"===t)n.styleFloat=n.cssFloat=r;else try{_&&(n[_+t.slice(0,1).toUpperCase()+t.slice(1)]=r),n[t]=r}catch(o){}};var it,lt,st,ct,ft,ut,pt,mt,gt,vt,dt,ht,yt,Tt,bt,St=i.addEvent=function(t,r,n){var o=function(t){return t=t||e.event,t.target||(t.target=t.srcElement),t.preventDefault||(t.preventDefault=function(){t.returnValue=!1}),n.call(this,t)};r=r.split(" ");for(var a,i=0,l=r.length;l>i;i++)a=r[i],t.addEventListener?t.addEventListener(a,n,!1):t.attachEvent("on"+a,o),Kt.push({element:t,name:a,listener:n})},wt=i.removeEvent=function(e,t,r){t=t.split(" ");for(var n=0,o=t.length;o>n;n++)e.removeEventListener?e.removeEventListener(t[n],r,!1):e.detachEvent("on"+t[n],r)},kt=function(){for(var e,t=0,r=Kt.length;r>t;t++)e=Kt[t],wt(e.element,e.name,e.listener);Kt=[]},Et=function(){var e=it.getScrollTop();Vt=0,ft&&!_t&&(a.style.height="auto"),j(),ft&&!_t&&(a.style.height=Vt+o.clientHeight+"px"),_t?it.setScrollTop(s.min(it.getScrollTop(),Vt)):it.setScrollTop(e,!0),ht=!0},xt=function(){var e,t,r=o.clientHeight,n={};for(e in ut)t=ut[e],"function"==typeof t?t=t.call(it):/p$/.test(t)&&(t=t.slice(0,-1)/100*r),n[e]=t;return n},At=function(){var e=st&&st.offsetHeight||0,t=s.max(e,a.scrollHeight,a.offsetHeight,o.scrollHeight,o.offsetHeight,o.clientHeight);return t-o.clientHeight},Ft=function(t){var r="className";return e.SVGElement&&t instanceof e.SVGElement&&(t=t[r],r="baseVal"),t[r]},Ct=function(t,n,o){var a="className";if(e.SVGElement&&t instanceof e.SVGElement&&(t=t[a],a="baseVal"),o===r)return t[a]=n,r;for(var i=t[a],l=0,s=o.length;s>l;l++)i=Ht(i).replace(Ht(o[l])," ");i=Dt(i);for(var c=0,f=n.length;f>c;c++)-1===Ht(i).indexOf(Ht(n[c]))&&(i+=" "+n[c]);t[a]=Dt(i)},Dt=function(e){return e.replace(P,"")},Ht=function(e){return" "+e+" "},Nt=Date.now||function(){return+new Date},Pt=function(e,t){return e.frame-t.frame},Vt=0,zt=1,Ot="down",qt=-1,It=Nt(),Lt=0,$t=0,Mt=!1,Bt=0,_t=!1,Gt=0,Kt=[]})(window,document);
+</script>
+
+<script type="text/javascript">
+   	$(window).load(function() {
+  		var s = skrollr.init({forceHeight:false});
+</script>
+
+</body>
