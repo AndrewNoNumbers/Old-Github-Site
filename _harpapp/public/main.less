@@ -1,5 +1,5 @@
 /*--------------
-  Main content
+  Global
 ----------------*/
 
 @main: #FF7B00;
@@ -16,57 +16,6 @@ body{
 
 a {
 
-}
-
-.cover {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: #FFEBCE;
-  height: 100%;
-  width: 100%;
-  z-index: -9;
-}
-
-.headline {
- 
-
-}
-
-.greeting {
-  position: absolute;
-  bottom: 40px;
-  left: 20px;
-}
-
-.permaNav {
-  position: absolute;
-  bottom: 0;
-  left: 20px;
-}
-.permaNav ul li {
-  display: inline;
-  margin-right: 14px;
-  text-transform: uppercase;
-  font-size: 0.8rem;
-}
-
-
-.projects{
-  margin-top: 900px;
-}
-
-.menu {
-  margin-top: 100px;
-}
-
-
-
-.mainlink a{
-  text-decoration: none;
-  font-size: 1.4rem;
-  padding: 5px 20px 9px 20px;
-  border: 2px solid;  
 }
 
 h1{
@@ -88,8 +37,52 @@ p{
 
 
 /*--------------
-  Index lists
+  Cover/Header
 ----------------*/
+
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #FFEBCE;
+  height: 100%;
+  width: 100%;
+  z-index: -9;
+}
+
+.greeting {
+  position: absolute;
+  bottom: 40px;
+}
+
+.menu {
+  margin-top: 100px;
+}
+
+
+/*--------------
+  Index lists and navs
+----------------*/
+
+.mainlink a{
+  text-decoration: none;
+  font-size: 1.4rem;
+  padding: 5px 20px 9px 20px;
+  border: 2px solid;  
+}
+
+
+.bottomBar {
+  position: absolute;
+  bottom: 0;
+}
+.bottomBar ul li {
+  display: inline;
+  margin-right: 14px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
 
 nav a {
   text-decoration: none;
@@ -107,6 +100,11 @@ nav ul li {
 /*--------------
   Projects Display
 ----------------*/
+
+.projects{
+  margin-top: 900px;
+}
+
 
 .a-project {
   margin-top: 150px;
@@ -141,9 +139,8 @@ nav ul li {
 
 
 /*--------------
-  The Email Bar
+  Email Bar
 ----------------*/
-@bar-color: #FF7474;
 
 #thebar {
   text-align: center;
@@ -157,7 +154,7 @@ nav ul li {
 
   padding: 4px 0;
 
-  background: @bar-color;
+  background: @main;
 }
 #thebar form div {
   display: inline;
@@ -172,7 +169,7 @@ nav ul li {
 #thebar input[type=text] {
   font-family: 'Lato', Helvetica, sans-serif;
   font-size: 1.1rem;
-  color: @bar-color;
+  color: @main;
 
 
   border: none;
@@ -203,8 +200,6 @@ nav ul li {
 #thebar .submit:hover {
   background: #1e75aa;
 }
-
-
 
 
 .connect {
