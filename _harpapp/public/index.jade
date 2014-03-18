@@ -1,34 +1,35 @@
 div#thebar
   != partial("_emailcollector")
 
-h1.headline Hello.
-div.greeting
-  h3 Hi, I'm Andrew! I design things.
-  p The more you know, the more you know, and the more you don't know.
+div.covertext
+  h1.headline Hello.
+
+  nav
+    ul
+      li: a(href="/about.html") About
+      li: a(href="#") What I do
+      li: a(href="/articles/") What I write
+      li: a(href="https://twitter.com/_ndrw/favorites") What I read
+      li: a(href="#") How I work
+    ul
+      li: a(href="http://designtox.tumblr.com") designtox
+      li: a(href="http://advicefromacollegedropout.com") Podcast Project
+      li: a(href="/articles/") Advice & Thoughts
+
+
+  div.greeting
+    h3 Hi, I'm Andrew! I design things.
+    p The more you know, the more you know, and the more you don't know.
+
+  nav.bottomBar
+    ul
+      li: a(href="/about.html") SwapBot
+      li: a(href="/weeResume/") tosigram
+      li: a(href="/articles/") Hejia
+      li: a(href="http://designtox.tumblr.com") designtox
 
 
 div.cover
-
-nav
-  ul
-    li: a(href="/about.html") About
-    li: a(href="/articles/") Advice & Thoughts
-    li: a(href="http://designtox.tumblr.com") designtox
-    li: a(href="http://advicefromacollegedropout.com") Podcast Project
-
-    li: a(href="#") About
-    li: a(href="#") What I do
-    li: a(href="#") What I write
-    li: a(href="#") What I read
-    li: a(href="#") How I work
-
-nav.bottomBar
-  ul
-    li: a(href="/about.html") About
-    li: a(href="/weeResume/") Resume
-    li: a(href="/articles/") Advice & Thoughts
-    li: a(href="http://designtox.tumblr.com") designtox
-
 
 
 section.projects
@@ -144,28 +145,24 @@ section.projects
 section.menu
   nav.unit.one-of-four
     ul
-      li: a(href="/about.html") About
-      li: a(href="/weeResume/") Resume
-      li: a(href="/articles/") Advice & Thoughts
+      li: a(href="/weeResume/") Résumé
       li: a(href="http://designtox.tumblr.com") designtox
       li: a(href="http://noodlesandbrain.tumblr.com") Noodles&Brain
-      li: a(href="http://advicefromacollegedropout.com") Podcast
+      li: a(href="http://advicefromacollegedropout.com") Podcast Project
       li: a(href="#") Shop
   nav.unit.one-of-four
     ul
-      li: a(href="/a/one-line-book-reviews.html") One-line book reviews
-      li: a(href="/a/content-consumption.html") Content consumption
+      li: a(href="/a/one-line-book-reviews.html") One-line UX book reviews
+      //li: a(href="/a/content-consumption.html") Content consumption
       li: a(href="#") StartupCities
-      li: a(href="/a/web-development-notes.html") Web dev notes
-      li: a(href="#") 10 Rules to Life
-      li: a(href="#") How I work
-      li: a(href="#") Recommendations
+      //li: a(href="/a/web-development-notes.html") Web dev notes
+      //li: a(href="#") 10 Rules to Life
+      //li: a(href="#") Recommendations
       li: a(href="#") How to be a UX designer
   nav.unit.one-of-four
     ul
       li: a(href="#") ndrw design lab
-      li: a(href="#") obnyc
-      li: a(href="#") Sponsor
+      li: a(href="http://obnyc.tumblr.com") obnyc
   nav.unit.one-of-four
     ul
       li: a(href="http://2010-2013.ndrw.me") 2010-2013.ndrw.me
