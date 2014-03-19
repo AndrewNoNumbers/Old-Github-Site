@@ -3,6 +3,7 @@
 ----------------*/
 
 @main: #FF7B00;
+@classy-dark-gray: #1A1A1A;
 
 body{
   font-family: 'Lato', Helvetica, sans-serif;
@@ -15,7 +16,7 @@ body{
 }
 
 a {
-
+  color: blue;
 }
 
 h1{
@@ -68,10 +69,14 @@ p{
 ----------------*/
 
 .mainlink a{
+  color: @classy-dark-gray;
   text-decoration: none;
   font-size: 1.4rem;
   padding: 5px 20px 9px 20px;
   border: 2px solid;  
+}
+.mainlink a:hover {
+  color: @main;
 }
 
 
@@ -158,7 +163,7 @@ nav ul li {
 
   padding: 4px 0;
 
-  background: @main;
+  background: @classy-dark-gray;
 }
 #thebar form div {
   display: inline;
@@ -167,13 +172,18 @@ nav ul li {
 #thebar label {
   color: white;
   margin-right: 5px;
-  font-weight: 400;
+
+  font-weight: 300;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
 }
 
 #thebar input[type=text] {
   font-family: 'Lato', Helvetica, sans-serif;
-  font-size: 1.1rem;
   color: @main;
+
+  font-size: 0.8rem;
 
 
   border: none;

@@ -1,4 +1,4 @@
-One-line book reviews
+One-line UX book reviews
 ======================
 
 ###Freehand: Sketching Tips and Tricks Drawn From Art
