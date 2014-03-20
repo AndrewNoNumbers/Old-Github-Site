@@ -2,7 +2,7 @@ One-line UX book reviews
 ======================
 
 ###Freehand: Sketching Tips and Tricks Drawn From Art by Helen Birch (c) 2013
-Handbook of ideas and basics of visual art. Won't necessarily make you a better artist but will give you a better grasp of visual art, for those without a art background.
+Handbook of ideas and basics of visual art. Won't make you a better artist but will give you a better grasp of visual art, especially for those without an art background.
 
 ###Product Design for the Web: Principles of Designing & Releasing Web Products by Randy J. Hunt, Creative Director, Etsy (c) 2014
 Takes the daunting task of defining the entire digital product design field and makes it accessible to a beginner, especially anyone with an arts background but new to product design.

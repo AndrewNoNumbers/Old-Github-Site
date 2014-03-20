@@ -9,7 +9,7 @@ For more information, you can see [my resume here](/weeResume/ "weeResume").
 
 
 ###About this site
-I made this site with Harp.js, HTML5, LESS, Jade templating and Markdown for content. I'm not a developer but I can code and I have a pretty long background in tech.
+I made this site with Harp.js, HTML5, LESS, Jade templating and Markdown for content. I'm not a developer but I can code and I have a pretty solid background in technology.
 
 
 Press features: VentureBeat / Chicago Tribune / SunTimes
