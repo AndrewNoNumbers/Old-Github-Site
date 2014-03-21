@@ -1,0 +1,97 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic,400italic"><link rel="stylesheet" href="/firstToastGrid.css"><!--CSS reset + grid--><link rel="stylesheet" href="/main.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"></head><body><div class="container"><div class="grid"><p class="mainlink"><a href="/">ndrw.me</a></p><h1>HTML slideshow systems</h1>
+<p><em>An overview of the most popular open source HTML slideshow systems</em></p>
+<p>Benefits:</p>
+<ul>
+<li>Can easily embed audio and video with HTML5</li>
+<li>Easy to switch to browser (for example a code demo) for presentation</li>
+<li>Can be more freeform, doesn&#39;t have to follow a sequential chronology </li>
+<li>Can work with only a browser</li>
+<li>If you host it online, you never have to keep track of a file</li>
+<li>Can edit with just a text editor</li>
+<li>The entire Web is accessible from the presentation</li>
+<li>Another plus is if your presentation is really good and you use it as content marketing, it&#39;s hosted right on your website rather than being on SlideShare and you can link inside the presentation </li>
+</ul>
+<p>Features I look for:</p>
+<ul>
+<li>Viewable on mobile</li>
+<li>Markdown support would be ideal</li>
+<li>Can be printed to PDFs</li>
+<li>Can link to a specific slide using fragment identifier (I think this is universally a yes)</li>
+<li>Auto-play</li>
+<li>Table of contents (mostly if I want others to look at it later)</li>
+</ul>
+<h3>deck.js</h3>
+<p>Slides are HTML
+deck.core module keeps track of slide states and deck states
+CSS defines what each state looks like and how to transition
+Extensions use core events and modules to add anything you want (for example, a visual navigation UI at bottom with deck.navigation, or a deck.status which shows where you are in the deck)</p>
+<p>You can link to fragments within a slide
+Cool fancy transitions
+You can use premade templates to make slides immediately, or make custom decks with the API exposed by the core and extensions</p>
+<p>Depends on jQuery and Modernizr</p>
+<p>-Viewable on mobile NO (not exactly optimized)
+-Markdown support would be ideal
+-Can be printed to PDFs</p>
+<p>Can look great if you know what you&#39;re doing; otherwise can be simple</p>
+<p><a href="http://imakewebthings.com/deck.js/">http://imakewebthings.com/deck.js/</a></p>
+<h3>jmpress.js</h3>
+<p>jQuery port of Impress.js
+Basically adds more features with plugin interface and is less of a tech demo
+Can use templates where you set attributes of your element with JavaScript (this way x and y and scale data are in the HTML file but are defined in the JavaScript)
+Can be used embedded on pages or within another jmpress
+Can be timed, yes</p>
+<p>-Viewable on mobile 
+-Markdown support would be ideal
+-Can be printed to PDFs YES</p>
+<p>Good perhaps better for implementing a fancy design, not for just throwing together a quick presentation</p>
+<p><a href="http://jmpressjs.github.io/jmpress.js">http://jmpressjs.github.io/jmpress.js</a></p>
+<h3>Impress.js</h3>
+<p>Open Prezi-like canvas, with transforms and transitions using CSS3
+Doesn&#39;t really work in older browsers, forget IE9 and back</p>
+<p>-Viewable on mobile NOPE/can work on some tablets but not optimized
+-Markdown support would be ideal
+-Can be printed to PDFs</p>
+<p>No reason to really choose above jmpress.js</p>
+<p><a href="https://github.com/bartaz/impress.js">https://github.com/bartaz/impress.js</a></p>
+<h3>Reveal.js</h3>
+<p>Most common one
+Nested slides (necessary though?)
+Slides can be written in HTML or Markdown
+CSS 3D transforms
+Javascript API
+PDF export</p>
+<p>-Viewable on mobile YES (but not that great)
+-Markdown support would be ideal YES
+-Can be printed to PDFs YES </p>
+<p>Most likely to use, just nicely designed and quick to use</p>
+<p><a href="http://lab.hakim.se/reveal-js">http://lab.hakim.se/reveal-js</a></p>
+<h3>Google HTML5 slides</h3>
+<p>-Viewable on mobile YES
+-Markdown support would be ideal YES
+-Can be printed to PDFs  </p>
+<p>More advanced features than I need, clean but not fancy visually
+Nice features if I&#39;m actually making a company presentation</p>
+<p><a href="https://code.google.com/p/io-2012-slides/">https://code.google.com/p/io-2012-slides/</a></p>
+<h3>Landslide</h3>
+<p>Generates Google HTML5 slides from Markdown using Python program
+Really cool if I want to set it up for regular use</p>
+<p><a href="https://github.com/adamzap/landslide">https://github.com/adamzap/landslide</a></p>
+<h3>Shwr.me</h3>
+<p>Good-looking theme if a bit more static-looking than other systems</p>
+<p>-Viewable on mobile NO
+-Markdown support would be ideal NO
+-Can be printed to PDFs YES </p>
+<p>Very simple and pleasant</p>
+<p><a href="https://github.com/shower/shower/">https://github.com/shower/shower/</a></p>
+<h3>Bespoke.js</h3>
+<p>Beautiful and cute
+Super minimal and DIY with plugin system</p>
+<p><a href="http://markdalgleish.com/projects/bespoke.js/">http://markdalgleish.com/projects/bespoke.js/</a></p>
+<h3>FerroSlider</h3>
+<p>jQuery plugin, quite flexible in terms of making a slider usable fullscreen
+&quot;jQuery plugin that allows you to organize the contents of websites in a unusual and cool way&quot;</p>
+<p>Can be used to develop some cool, if not super easy-to-use sites</p>
+<p><a href="http://www.alessandroferrini.it/lab/jQueryPlugins/ferroSlider/docs/">http://www.alessandroferrini.it/lab/jQueryPlugins/ferroSlider/docs/</a></p>
+<hr>
+<p>A startup <a href="http://www.slidecaptain.com/">http://www.slidecaptain.com/</a></p>
+</div><footer><p>Made by <a href="/">ndrw.me</a></p></footer></div></body></html>

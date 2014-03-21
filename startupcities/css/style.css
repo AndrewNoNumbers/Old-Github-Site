@@ -1,0 +1,221 @@
+
+/*overall*/
+* {
+	margin: 0 0;
+	padding: 0 0;
+}
+
+body {
+	background-color: #fff;
+	font-family: 'Oxygen', sans-serif;
+	font-weight: 300;
+	color: #858585;
+}
+
+a {
+	text-decoration: none;
+}
+
+/*full-width fixed*/
+/*header { 
+	background: #000;
+	width: 100%;
+
+	text-align: center;
+	margin-bottom: 70px;
+	position: fixed;
+
+	font-size: 11px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}*/
+
+/*navigates back to index, fixed in upper left corner*/
+header {
+	background: #FAFAFA;
+	padding: 3px;
+	border-bottom-right-radius: 3px;
+
+	position: fixed;
+	font-size: 10px;
+	text-transform: lowercase;
+}
+header a {
+	color: #BDC3C7;
+}
+header a:hover {
+	color: #3498DB;
+}
+
+
+
+/*wraps all content except header and footer*/
+#main {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+
+
+
+
+/*navigation for the single page*/
+.pagenav {
+	background-color: #3498DB;
+	text-align: center;
+	padding-bottom: 7px;
+	margin-bottom: 20px;
+	font-size: 20px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+/*title of the city*/
+.pagenav h1 {
+	color: #000;
+	padding: 40px;
+	margin: 20px 0;
+	border: 3px solid;
+	text-transform: uppercase;
+	font-family: 'Share Tech Mono', sans-serif;
+	font-size: 1.9em;
+	margin-left: auto;
+	margin-right: auto;
+	display: inline-block;
+
+	/*color: #014E81;
+	text-align: center;
+	padding: 7px;
+
+	font-size: 2.3em;
+	font-family: 'Share Tech Mono', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+
+	border-bottom: 2px solid #014E81;*/
+}
+.pagenav a {
+	color: #fff;
+	padding: 7px 20px;
+	margin: 3px 0;
+	display: block;
+}
+.pagenav a:hover {
+	background-color: #014E81;
+	transition-duration: 0.2s;
+}
+
+
+
+
+
+
+
+/*each section*/
+section {
+	margin-bottom: 70px;
+	padding-top: 10px;
+}
+
+section h1 {
+	color: #000;
+	border-bottom: 1px solid #000;
+	padding-bottom: 4px;
+}
+
+/*if there are further sections within the section*/
+section h2{
+	font-size: 1.3em;
+}
+
+/*a secondary section description*/
+section .description {
+	color: #BDC3C7;
+	font-size: 0.8em;
+}
+
+section ul li {
+	list-style: none;
+	margin-left: 0px;
+	margin-top: 8px;
+}
+
+/*colored tag-style links*/
+section li a {
+	color: #fff;
+	background-color: #3498DB;
+	padding: 2px 4px;
+	border-radius: 3px;
+}
+section ul a:hover {
+	background-color: #014E81;
+	transition-duration: 0.2s;
+}
+
+/*specifically for the items that should be highlighted but are not hyperlinks*/
+#companies ul li {
+	color: #3498DB;
+	border: 1px solid #3498DB; /*style for not active links*/
+	padding: 1px 3px;
+	border-radius: 3px;
+	display: inline-block;
+}
+
+/*arrow at each section that scrolls back to top*/
+.anchorScroll {
+	float: right;
+	margin-top: 10px;
+}
+.anchorScroll a {
+	color: #000;
+	padding: 0 3px 0 8px;
+}
+
+/*for breaks within a section*/
+hr {
+	margin-top: 10px;
+	border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+
+
+
+
+/*starup cities*/
+.cityselect {
+	padding-top: 40px;
+}
+
+.cityselect h2 {
+	color: #000;
+	padding: 40px;
+	margin-right: 40px;
+	border: 3px solid #000;
+	text-transform: uppercase;
+	font-family: 'Share Tech Mono', sans-serif;
+	font-size: 1.9em;
+}
+
+.cityselect h2:hover {
+	color: #B1B7FF;
+	border: 3px solid #B1B7FF;
+}
+
+.cityselect ul {
+	margin-left: 40px;
+}
+
+.cityselect ul li {
+	list-style: none;
+	margin-top: 40px;
+	display: inline-block;
+}
+
+
+
+
+footer {
+	text-align: center;
+	padding: 40px 0 40px 0;
+}
