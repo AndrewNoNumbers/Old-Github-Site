@@ -58,6 +58,7 @@ list-style:none;
 }
 blockquote, q {
 quotes:none;
+font-size: 120%;
 }
 blockquote:before, blockquote:after,
 q:before, q:after {

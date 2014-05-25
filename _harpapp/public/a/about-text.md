@@ -2,14 +2,13 @@
 The header of this site is by California artist, Michael Martin. All other work is by me.-->
 
 ##Hi, I'm Andrew.
-I'm a UX/Product Designer with an interest in many other topics.
-
-
-For more information, you can see [my resume here](/weeResume/ "weeResume").
+I'm a student with a strong interest in designing digital products and experiences. In the past, I've . However, what I truly love is experiences, behavior, and humans. 
 
 
 ###About this site
-I made this site with Harp.js, HTML5, LESS, Jade templating and Markdown for content. I'm not a developer but I can code and I have a pretty solid background in technology.
+This site was made with HTML, LESS, Jade, Harp.js, and Markdown. I'm not a front-end developer but I can write some code.
+
+I got sick of Wordpress and found the excellent Harp.js
 
 
 Press features: VentureBeat / Chicago Tribune / SunTimes
