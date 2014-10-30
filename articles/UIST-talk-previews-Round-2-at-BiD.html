@@ -1,0 +1,66 @@
+<!DOCTYPE html><html><head><link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Lato:100,300,400,700,300italic,400italic"><link rel="stylesheet" href="/firstToastGrid.css"><!--CSS reset + grid--><link rel="stylesheet" href="/main.css"><link rel="stylesheet" href="articlestyle.css"><meta name="viewport" content="width=device-width, initial-scale=1.0"></head><body><!--Google Analytics tracking code at top--><script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-15898503-2', 'andrewnonumbers.github.io');
+ga('send', 'pageview');
+</script><div class="container"><div class="grid"><p class="mainlink"><a href="/" class="ndrwlink">ndrw.me</a> <a href="/articles">/articles</a><div class="articlecontent"><h1>UIST talk previews Round 2 at BiD</h1>
+<p>Feedback: goo.gl/GwQQ4m</p>
+<h3>Talk 1: Jonathan Harper (advisor Maneesh Agrawal)</h3>
+<p><em>Deconstructing and Restyling d3 Visualizations</em></p>
+<p>exposing the data from the visualization</p>
+<p>Savva uses computer vision and heuristics to extract data from bitmap bar charts, pies etc.</p>
+<p>provide a GUI for restyling the data so end-users can use it</p>
+<p>since it&#39;s d3, we&#39;re using SVGs, meaning we can take stuff from that
+the data in a d3 visualization is actually stored alongside the SVG nodes, thus we can traverse the nodes and collect all the data</p>
+<p>Feedback:
+How prevalent is D3? Give some statistics.
+you talk about several reasons for getting at the data - each of these reasons needs its own slide to illustrate the point</p>
+<p>have to explain earlier on how D3 works in the beginning - this SVG tree came out of nowhere
+7: It sounds like you are relying on data binding and tree ordering to get useful data - but I didn’t understand whether these <em>always</em> work, or if they <em>sometimes</em> work if developers happen to stick to certain conventions.</p>
+<p>have to explain earlier on how D3 works in the beginning - this SVG tree came out of nowhere
+7: It sounds like you are relying on data binding and tree ordering to get useful data - but I didn’t understand whether these <em>always</em> work, or if they <em>sometimes</em> work if developers happen to stick to certain conventions.</p>
+<p>less of just a demo, more of why it matters and how it differentiates 
+much too much mechanics and details (it&#39;s pretty obvious); need a bigger picture at the beginning - what makes this problem challenging and worthwhile to solve</p>
+<p>When you are done say “Thank you,” it cues people to clap.</p>
+<p>Bjoern
+Kristin ksteph@cs.berkeley.edu</p>
+<h3>Talk 2: Joanne Lo (advisor Eric Paulos)</h3>
+<p>3rd year Ph.D.
+<em>ShrinkyCircuits: Sketching, shrinking, and formgiving of electric circuits</em></p>
+<p>after sketching stage, you generally have to put it into a PCB program (like Eagle), then have it printed somewhere, then you put it in a housing</p>
+<p>Prestressed polystyrene (this is actually what ShrinkyDinks are)
+shrinks at heat, goes from flexible cardstock-like form to a thicker piece</p>
+<p>draw your circuit with a  conductive pen
+conductive ink actually becomes more conductive as side effect of heating process 11.84Ω to 1.4Ω</p>
+<p>Circuit boards as final design form (can be assembled into 3D shapes, used as crafts etc.)</p>
+<p>Feedback: </p>
+<p>add slide numbers - especially for practice talks so people can refer to it, give feedback on it</p>
+<p>The conductivity improvement is AWESOME. But you could have covered this in 30 seconds.</p>
+<p>Should know the shrinking factor, and the tolerance on that, or else we don&#39;t know if a component we want to put on later will actually fit </p>
+<p>Motivation/background
+Our process
+Results
+Limitations</p>
+<h3>Talk 3: Steve Rubin (advisor Maneesh Agrawal)</h3>
+<p>Why does music work so well with auditory stories?
+music activates reward, emotion, pain etc.</p>
+<p>how do we create a musical score for the story?
+we often have to rearrange and cut a musical score to have the emotion match the parts of the story</p>
+<p>first step is emotional labeling of the musical score
+In psychology: valence-arousal graph (so nervous-calm on y-axis and sad-happy on x-axis)</p>
+<p>How do we do this?
+Hand-labeling
+crowd-labeling
+automatic-labeling (trained with a Turk data set)</p>
+<p>we&#39;ve talked to producers about their scoring techniques, and saw what limitations we had here
+added some constraints (such as avoid looping, add pauses, constrain duration of music) etc. to make it sound more natural</p>
+<p>kept musical score consistently 12dB below oral track</p>
+<p>Got feedback on quality of different labeling techniques vs no music</p>
+<p>Perhaps four color feedback is too coarse
+Perhaps need a smooth spectrum within a story</p>
+<p>Show how it might apply in real use, like a children&#39;s story and or podcast
+How automated is all the steps, how can a user maybe approach it</p>
+<p>How does it compare to professionally-scored audio story</p>
+</div></p></div><footer><p>Made by <a href="/">ndrw.me</a></p></footer></div></body></html>
