@@ -1,18 +1,18 @@
 
-##Read a thing
+Read a thing
 
-##Write a thing
+Write a thing
 
-##Friend a thing
+Friend a thing
 
-##Make a thing
+Make a thing
 
-##Study a thing
+Study a thing
 
-##Keep informed (WSJ or NPR)
+Keep informed (WSJ or NPR)
 
-##Fitness
+Fitness
 
 
 
-##Experience beauty/emotion (a film or experience) every week
+Experience beauty/emotion (a film or experience) every week

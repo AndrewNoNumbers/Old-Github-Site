@@ -7,7 +7,7 @@ was Chief Scientist at Amazon
 
 Max Levchin
 HVF in SF
-avid road cyclists
+avid road cyclist
 
 
 U of I was sink or swim, very motivating experience
@@ -92,4 +92,4 @@ got the first algorithm from a book, then added a few rules on top of that to re
 
 
 messy, unstructured data is probably hugely undervalued, because no one has taken the time to clean it yet and see the value in it
-being able to visualize that data, computer graphics, it's important
+being able to visualize that data, computer graphics, is also important

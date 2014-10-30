@@ -1,5 +1,14 @@
 @primarywidth: 700px;
 
+@accent: #09BD87;
+
+
+a:hover {
+  color: @accent;
+}
+/*global a:hover for articles because we don't want white for hover*/ 
+
+
 .articlecontent {
 
   p, ul {
@@ -23,7 +32,7 @@
 
     border-top-style: solid;
     border-top-width: 20px;
-    border-color: #09BD87;
+    border-color: @accent;
 
     box-shadow: 0px 1px 0px rgba(0,0,0,0.2),
      0px 1px 3px rgba(0,0,0,0.2),
@@ -34,10 +43,11 @@
   h2 {
     font-size: 8em;
 
+    margin-top: 60px;
+
     text-transform: uppercase;
     text-align: center;
 
-    border-bottom: 2px solid gray;
   }
 
   h3 {
@@ -48,6 +58,8 @@
     margin-right: auto;
 
     border-bottom: 2px solid black;
+
+    margin-bottom: -150px;
   }
 
   blockquote {
@@ -58,8 +70,13 @@
 
   }
 
-  hr {
-    /*perhaps should just inherit?*/
-  }
+}
+
+
+ul.majorlist {
+  box-shadow: none;
+  border: none;
 
 }
+/*overrides ul articlecontent styling because it shouldn't display like that on the index page*/
+
