@@ -63,15 +63,6 @@ ul li {
   color: black;
 }
 
-.greeting {
-  position: absolute;
-  bottom: 40px;
-}
-
-.menu {
-  margin-top: 700px;
-}
-
 /*.separator {
   position: absolute;
   top: 100%;
@@ -85,9 +76,56 @@ ul li {
   border-color: #85D8FF transparent transparent transparent;
 }*/
 
+
+.greeting {
+  position: absolute;
+  bottom: 40px;
+}
+
+.bottomBar {
+  position: absolute;
+  bottom: 10px;
+}
+.bottomBar ul li {
+  display: inline;
+  margin-right: 14px;
+  text-transform: none;
+}
+.bottomBar ul li a {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  padding: 4px 5px;
+  margin-left: 2px;
+  background-color: black;
+  color: white;
+  letter-spacing: 0.07rem;
+}
+.bottomBar ul li a:hover {
+
+}
+
 /*--------------
   Index lists and navs
 ----------------*/
+
+.menu {
+  margin-top: 700px;
+  margin-bottom: 75px;
+  line-height: 2em;
+}
+nav a {
+  text-decoration: none;
+  color: @main;
+
+  text-transform: uppercase;
+  letter-spacing: 0rem;
+  font-weight: 300;
+}
+nav ul li {
+  padding-bottom: 6px;
+  text-transform: uppercase;
+}
+
 
 .mainlink a{
   color: @classy-dark-gray;
@@ -106,40 +144,18 @@ ul li {
   color: @main;
 }
 
-
-.bottomBar {
-  position: absolute;
-  bottom: 10px;
+.mutedtext {
+  color: gray;
+  text-transform: none;
+  line-height: 2em;
 }
-.bottomBar ul li {
-  display: inline;
-  margin-right: 14px;
-}
-.bottomBar ul li a {
-  text-transform: uppercase;
-  font-size: 0.7rem;
-  padding: 4px;
-  background-color: black;
-  color: white;
-  letter-spacing: 0.07rem;
-}
-.bottomBar ul li a:hover {
- 
+.mutedtext a {
+  text-transform: none;
 }
 
 
-nav a {
-  text-decoration: none;
-  color: @main;
 
-  text-transform: uppercase;
-  letter-spacing: 0rem;
-  font-weight: 300;
-}
-nav ul li {
-  padding-bottom: 15px;
-  text-transform: uppercase;
-}
+
 
 
 /*--------------
