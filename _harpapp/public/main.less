@@ -25,7 +25,7 @@ a:hover {
 h1{
   font-size: 65px;
   line-height: 1.2em;
-  border-bottom: 1px dashed #E6E6E6;
+  /*border-bottom: 1px dashed #E6E6E6;*/
   padding: 20px 0;
 }
 
@@ -52,7 +52,7 @@ ul li {
   top: 0;
   left: 0;
   background-color: #fff;
-  background: url(../img/header-bg.jpg) no-repeat center top;
+  background: url(../img/border_dune_desktop.jpg) no-repeat center top;
   background-attachment: relative;
   background-position: center center;
   height: 110%;
@@ -79,7 +79,7 @@ ul li {
 
 .greeting {
   position: absolute;
-  bottom: 40px;
+  bottom: 60px;
 }
 
 .bottomBar {
@@ -222,16 +222,16 @@ nav ul li {
 ----------------*/
 
 #thebar {
-  text-align: center;
+  text-align: right;
 
   position: absolute;
-  top: 0;
+  bottom: 200px;
 
   //centers the bar
   left: 0; right: 0;
   margin: auto; 
 
-  padding: 4px 0;
+  padding: 0px 0; /*this adds padding from the form elements to the form*/
 
   background: @classy-dark-gray;
 }
@@ -251,39 +251,48 @@ nav ul li {
 
 #thebar input[type=text] {
   font-family: 'Lato', Helvetica, sans-serif;
-  color: @main;
+  color: #000;
 
-  font-size: 0.8rem;
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+
+  font-size: 0.7rem;
 
 
   border: none;
-  border-radius: 5px;
+  /*border-radius: 5px;*/
 
   padding: 0 10px;
 
   height: 30px;
   width: 210px;
 
-  margin-right: 5px;
+
+  /*margin-right: 5px; 
+  used if I want the submit button to have a visible different bg color, not used if it's same as topbar color*/
 }
 
 #thebar .submit {
+  margin-left: -3px; /*could not figure what the black margin area was between the input field and submit, so this is a bit of a cheat*/
   font-family: 'Lato', Helvetica, sans-serif;
   text-transform: uppercase;
   letter-spacing: 0.04rem;
 
   border: none;
-  background: #136899;
+  background: #00A3FF; /* #00A3FF*/
   height: 30px;
-  width: 80px;
+  width: 120px;
   color: white;
-  border-radius: 5px;
+  /*border-radius: 5px;*/
+  font-weight: 400;
   transition: all 0.15s linear;
 
 }
 #thebar .submit:hover {
-  background: #1e75aa;
+  background: #057EAA;
 }
+
 
 
 .majorlist {
@@ -297,6 +306,11 @@ nav ul li {
   display: block;
 }
 
+@media screen and (max-width: 650px) {
+  #thebar {
+    display: none;
+  }
+}
 
 
 /*--------------
