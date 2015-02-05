@@ -77,14 +77,25 @@ ul li {
 }*/
 
 
-.greeting {
+.dead-center { /*makes the element both vertically and horizontally centered on screen, dead center*/
+  margin: auto;
   position: absolute;
-  bottom: 60px;
+  top: 0; left: 0; bottom: 0; right: 0;
+  height: 200px;
+}
+.dead-center .unit {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.greeting {
+  text-align: center;
+
+  margin-bottom: 10px;
 }
 
 .bottomBar {
-  position: absolute;
-  bottom: 10px;
+  margin: 0 60px;
 }
 .bottomBar ul li {
   display: inline;
@@ -103,15 +114,22 @@ ul li {
 .bottomBar ul li a:hover {
 
 }
+.bottomBar .unit {
+  text-align: center;
+  margin: 0;
+}
 
 /*--------------
   Index lists and navs
 ----------------*/
 
 .menu {
-  margin-top: 700px;
+  position: absolute; /*why the heck does this mess up the right margin of the menu section*/
+  top: 123%;
+  /*margin-top: 700px; /*this is the problem, because it's a static number, so it's 700 from top no matter how tall the screen is*/
   margin-bottom: 75px;
   line-height: 2em;
+  margin-right: 120px; /*this solves the problem but idk why yet, so I gotta figure it out, need to use Chrome inspector*/
 }
 nav a {
   text-decoration: none;
@@ -139,6 +157,7 @@ nav ul li {
   font-size: 1.4rem;
   padding: 5px 20px 9px 20px;
   border: 2px solid;  
+  margin-left: 3px;
 }
 .mainlink a:hover {
   color: @main;
@@ -187,8 +206,8 @@ nav ul li {
 
 .a {
   color: #fff;
-  background: #0a1855;
-  background: linear-gradient(45deg, #0a1855 0%, #da0024 100%) fixed;
+  background: #B0373D;
+  background: linear-gradient(45deg, #B0373D 0%, #EB5A59 100%) fixed;
 }
 
 .b {
@@ -199,8 +218,8 @@ nav ul li {
 
 .c {
   color: #fff;
-  background: #44a226;
-  background: linear-gradient(45deg, #44a226 0%, #7dca49 100%) fixed;
+  background: #34A772;
+  background: linear-gradient(45deg, #34A772 0%, #3DDB8E 100%) fixed;
 }
 
 .d {
@@ -225,7 +244,7 @@ nav ul li {
   text-align: right;
 
   position: absolute;
-  bottom: 200px;
+  bottom: 90px;
 
   //centers the bar
   left: 0; right: 0;
@@ -313,12 +332,18 @@ nav ul li {
 }
 
 
+
+
 /*--------------
   Footer
 ----------------*/
 
-footer{
+.sitewide footer {
+  position: absolute;
+  bottom: 20px;
+  
   margin: 70px 0;
   font-size: 0.8rem;
   text-align: center;
 }
+
