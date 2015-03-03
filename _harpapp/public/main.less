@@ -129,7 +129,10 @@ ul li {
   /*margin-top: 700px; /*this is the problem, because it's a static number, so it's 700 from top no matter how tall the screen is*/
   margin-bottom: 75px;
   line-height: 2em;
-  margin-right: 120px; /*this solves the problem but idk why yet, so I gotta figure it out, need to use Chrome inspector*/
+}
+.menu .unit {
+  margin-left: 0;
+  margin-right: 0;
 }
 nav a {
   text-decoration: none;
@@ -157,7 +160,6 @@ nav ul li {
   font-size: 1.4rem;
   padding: 5px 20px 9px 20px;
   border: 2px solid;  
-  margin-left: 3px;
 }
 .mainlink a:hover {
   color: @main;
@@ -171,7 +173,6 @@ nav ul li {
 .mutedtext a {
   text-transform: none;
 }
-
 
 
 
@@ -235,6 +236,16 @@ nav ul li {
 }
 
 
+/*
+.a, .b, .c, .d, .e {
+  background: white;
+  color: @classy-dark-gray;
+
+  a {
+    color: @main;
+  }
+}*/
+
 
 /*--------------
   Email Bar
@@ -252,7 +263,7 @@ nav ul li {
 
   padding: 0px 0; /*this adds padding from the form elements to the form*/
 
-  background: @classy-dark-gray;
+  background-color: @classy-dark-gray;
 }
 #thebar form div {
   display: inline;
@@ -346,4 +357,88 @@ nav ul li {
   font-size: 0.8rem;
   text-align: center;
 }
+
+
+
+
+
+
+/*--------------
+  Pages 
+----------------*/
+
+.articlecontent {
+
+  p, ul {
+    border-bottom: 2px solid black;
+
+    width: 700px;
+
+    margin-left: auto;
+    margin-right: auto;
+
+
+    text-align: left;
+    font-family: 'Raleway', Helvetica, sans-serif;
+    font-size: 30px;
+    color: #262A27;
+    margin-top: 300px;
+    margin-bottom: 300px;
+    padding: 24px 16px;
+    background: #fff;
+    border-radius: 5px;
+
+    border-top-style: solid;
+    border-top-width: 20px;
+
+    box-shadow: 0px 1px 0px rgba(0,0,0,0.2),
+     0px 1px 3px rgba(0,0,0,0.2),
+     0px 8px 13px rgba(0,0,0,0.1),
+     0px 18px 23px rgba(0,0,0,0.1);
+  }
+
+  h2 {
+    font-size: 8em;
+
+    margin-top: 60px;
+
+    text-transform: uppercase;
+    text-align: center;
+
+    font-weight: 100;
+
+  }
+
+  h3 {
+    font-size: 2em;
+
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+
+    border-bottom: 2px solid black;
+
+    margin-bottom: -150px;
+
+  }
+
+  blockquote {
+    border-left: 3px solid gray;
+  }
+
+  strong {
+
+  }
+
+}
+
+
+ul.majorlist {
+  box-shadow: none;
+  border: none;
+
+}
+/*overrides ul articlecontent styling because it shouldn't display like that on the index page*/
+
+
 
