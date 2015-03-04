@@ -1,0 +1,473 @@
+/*-----------------------------------*\
+
+	firstToast.css (Toast modified by Andrew)
+	A Simple CSS Framework
+	=================================
+
+	Values you may want to change:
+	- .container { max-width:; }
+	- p { margin-bottom:; }
+	- html { font:; }
+
+	Remember: no framework will be as
+	good as a custom built, per-
+	project	one. Toast and other
+	frameworks are best used for
+	rapid prototyping.
+
+\*-----------------------------------*/
+
+/*-----------------------------------*\
+	$RESET
+\*-----------------------------------*/
+
+/**
+* html5doctor.com Reset Stylesheet v1.6.1 (http://html5doctor.com/html-5-reset-stylesheet/)
+* Richard Clark (http://richclarkdesign.com)
+* http://cssreset.com
+*/
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+margin:0;
+padding:0;
+border:0;
+outline:0;
+font-size:100%;
+vertical-align:baseline;
+background:transparent;
+}
+body {
+line-height:1;
+}
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+display:block;
+}
+nav ul {
+list-style:none;
+}
+blockquote, q {
+quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+content:'';
+content:none;
+}
+a {
+margin:0;
+padding:0;
+font-size:100%;
+vertical-align:baseline;
+background:transparent;
+}
+/* change colours to suit your needs */
+ins {
+background-color:#ff9;
+color:#000;
+text-decoration:none;
+}
+/* change colours to suit your needs */
+mark {
+background-color:#ff9;
+color:#000;
+font-style:italic;
+font-weight:bold;
+}
+del {
+text-decoration: line-through;
+}
+abbr[title], dfn[title] {
+border-bottom:1px dotted;
+cursor:help;
+}
+table {
+border-collapse:collapse;
+border-spacing:0;
+}
+input, select {
+vertical-align:middle;
+}
+
+
+/*-----------------------------------*\
+	$GRID
+\*-----------------------------------*/
+
+.container {
+	/* Whatever you want. They’re your oats. */
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 0 30px;
+	padding: 0 1.5rem;
+
+	margin-top: 80px;
+	margin-bottom: 40px;
+}
+
+.grid {
+	max-width: 105%;
+}
+
+.unit {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+	vertical-align: top;
+	margin-left: 3%;
+	margin-right: -.25em;
+	/* Clearfix */
+	overflow: hidden;
+	*overflow: visible;
+}
+
+	.unit.demo {
+		background-color: #fff8eb;
+		height: 48px;
+		height: 3rem;
+		margin-bottom: 24px;
+		margin-bottom: 1.5rem;
+	}
+
+.span-grid {
+	width: 97%;
+}
+
+.one-of-two { width: 47%; }
+
+.one-of-three { width: 30.36%; }
+.two-of-three { width: 63.666666666%; }
+
+.one-of-four { width: 22.05%; }
+.three-of-four { width: 72%; }
+
+.one-of-five { width: 17.07%; }
+.two-of-five { width: 37%; }
+.three-of-five { width: 57%; }
+.four-of-five { width: 77%; }
+
+@media screen and (max-width: 650px) {
+	.grid {
+		margin-left: 0;
+		max-width: none;
+	}
+
+	.unit {
+		width: auto;
+		margin-left: 0;
+		display: block;
+	}
+}
+
+/*-----------------------------------*\
+	$TYPE
+
+	Works off the assumption of a 1.5
+	line height @ 20px. Again, change
+	as necessary.
+\*-----------------------------------*/
+
+p, .p, ul, ol, hr, table, form, pre,
+h1, .alpha, h2, .beta {
+	margin-bottom: 30px;
+	margin-bottom: 1.5rem;
+}
+
+h1, .alpha {
+	font-size: 60px;
+	font-size: 3rem;
+	font-weight: 700;
+	line-height: 1;
+
+}
+
+h2, .beta {
+	font-size: 30px;
+	font-size: 1.2rem;
+	font-weight: 400;
+
+}
+
+h3, .gamma {
+	font-size: 20px;
+	font-size: 1rem;
+	font-weight: 700;
+}
+
+h4 {
+
+}
+
+
+hr {
+	border: none;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	margin-top: -1px;
+}
+
+/*-----------------------------------*\
+	$MAIN
+\*-----------------------------------*/
+
+html {
+	font-family: 'Lato', Helvetica Neue, Helvetica, sans-serif;
+	font-weight: 300;
+}
+
+@media screen and (max-width: 650px) {
+	html {
+		font-size: 100%;
+	}
+	.fullname {
+		font-size: 2.1rem;
+	}
+	header, .contact-info {
+		text-align: left;
+	}
+	.contact-info li {
+		margin: 0 50px;
+		margin-top: 20px;
+	}
+}
+
+/*-----------------------------------*\
+	$ADDTIONAL ELEMENTS
+\*-----------------------------------*/
+
+
+@main: #FFC83D;
+@main-lighten: lighten(@main, 20%);
+@main-fade: fade(@main, 20%);
+@gray: #A2A2A2;
+
+.fullname {
+	font-family: 'Slabo 27px', Helvetica, sans-serif;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 2.9rem;
+	margin-left: 4px;
+	margin-top: 22px;
+}
+
+.byline {
+
+}
+
+header, .contact-info {
+	text-align: center;
+}
+
+.contact-info {
+	background-color: @main;
+	border-radius: 0px;
+
+	margin-top: 20px;
+	margin-bottom: 40px;
+
+	border-bottom: 4px solid @main-lighten;
+
+	padding: 0 5px 0 0; /*just some padding on the right*/
+}
+
+.contact-info li {
+	display: inline-block;
+	margin: 6px 24px 8px 0;
+	height: 21px;
+}
+.contact-info li a {
+	padding: 3px 8px 4px 8px;
+	border-radius: 20px;
+	text-decoration: underline;
+	background-color: @main;
+	color: white;
+	border: 1px solid @main;
+
+	font-size: 1rem;
+	letter-spacing: 0.02rem;
+
+    transition: color 0.4s, background-color 0.4s, transform 2s;
+}
+.contact-info li a:hover {
+	background-color: white;
+	color: @main;
+}
+
+
+/*backup
+
+.contact-info {
+	background-color: @gray;
+	border-radius: 6px;
+	margin-top: 20px;
+	margin-bottom: 40px;
+}
+
+.contact-info li {
+	display: inline-block;
+	margin: 6px 24px 8px 0;
+	height: 21px;
+}
+.contact-info li a {
+	padding: 3px 8px 4px 8px;
+	border-radius: 20px;
+	text-decoration: none;
+	background-color: @gray;
+	color: white;
+	border: 1px solid @gray;
+
+	font-size: 1rem;
+	letter-spacing: 0.02rem;
+}
+.contact-info li a:hover {
+	background-color: white;
+	color: @main;
+}
+*/
+
+
+
+/*header {
+	border-top: 1px dashed #797979;
+	margin-top: 10px;
+	padding-top: 15px;
+}
+.contact-info {
+	border-bottom: 1px dashed #797979;
+	padding-bottom: 10px;
+	margin-bottom: 30px;
+}*/
+
+
+
+
+
+
+
+h2 {
+	font-weight: 300;
+	text-transform: uppercase;
+	letter-spacing: 0.1rem;
+	font-size: 0.7rem;
+}
+
+
+
+a {
+	color: @main;
+}
+
+
+
+.institution {
+
+}
+.location {
+	font-style: italic;
+}
+
+
+.dates {
+	font-size: 0.7rem;
+
+	border: 0px solid;
+	border-radius: 5px;
+	padding: 4px;
+
+	background-color: black;
+	color: white;	
+
+	letter-spacing: 0.07rem;
+	text-transform: uppercase;
+}
+p {
+	color: @gray;
+	line-height: 1.5rem;
+
+}
+
+
+.left {
+	margin-left: 0;
+}
+
+.content p {
+	margin-bottom: 30px;
+}
+
+
+.entry {
+	margin-bottom: 0.3rem;
+}
+.entry li {
+	display: inline-block;
+	margin-right: 3px;
+}
+
+
+.rightbar {
+
+}
+
+.miniimg {
+	max-height: 23px;
+}
+
+
+
+/*.entypo-phone, .lmk-phone {
+	color: #00BB10;
+}
+.entypo-mail, .lmk-mail {	
+	color: #FFC400;
+}
+.entypo-twitter, .lmk-twitter:hover {
+	color: #55ACEE;
+}
+.entypo-linkedin-circled, .lmk-linkedin:hover {
+	color: #0976b4;
+}
+
+
+.contact-info li .lmk-twitter:hover {
+	color: #fff;
+	background-color: #55ACEE;
+	border-color: #55ACEE;
+}
+.contact-info li .lmk-linkedin:hover {
+	color: #fff;
+	background-color: #0976b4;
+	border-color: #0976b4;
+}*/
+
+
+#volunteer-experience .institution {
+	margin-bottom: 6px;
+}
+
+
+.call-widget {
+	margin: 20px 0;
+	text-align: center;
+}
+
+footer ul {
+	margin-bottom: 0;
+	color: @gray;
+	text-align: center;
+}
+.miniquote {
+	border-top: 1px solid rgba(0,0,0,.1);
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	text-align: center;
+	padding: 30px 0;
+}

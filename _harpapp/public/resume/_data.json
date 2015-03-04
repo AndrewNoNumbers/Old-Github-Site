@@ -1,0 +1,184 @@
+{
+  "index": {
+
+    "header": {
+      "fullName": "Andrew S. Chen",
+      "headline": "There are secrets left in the world."
+    },
+
+    "contact": {
+      "phone": "(410)775-6326",
+      "email": "andrew@ndrw.me"
+    },
+
+    "summary": "I'm a designer with a background in tech and startup companies. I've led design on several projects, and believe that it is my most direct way of impacting the world. I like to learn broadly, make things, and create exceptional experiences.",
+
+    "education": [
+      {
+        "title": "University of California at Berkeley",
+        "dates": "2014",
+        "location": "Berkeley, CA",
+        "institution": "Summer Semester",
+        "description": "College of Environmental Design, Zero Energy Building, Berkeley Art Studio"
+      },
+      {
+        "title": "Additional Education",
+        "dates": "2014",
+        "location": "",
+        "institution": "",
+        "description": "6 MOOCs completed from Stanford University, Johns Hopkins University, University of Toronto, University of Virginia / member of Lynda, recipient of two-year Treehouse Gold scholarship / workshops at AIGA, Tekserve, Noble Desktop, etc."
+      },
+      {
+        "title": "University of Florida",
+        "dates": "2012",
+        "location": "Gainesville, FL",
+        "institution": "Digital Arts & Sciences, College of Engineering",
+        "description": "1st place at IDEO JumpstART V / volunteer organizer for TEDxUF / finalist for The HackerHouse startup incubator / volunteer at 3DayStartup and Startup Weekend Gainesville / member of TEC, Software Development Club, Gators for Green Design, The Wildlife Society, and TED Club"
+      },
+      {
+        "title": "Project Breaker",
+        "dates": "Summer 2012",
+        "location": "New York, NY",
+        "institution": "Project Breaker",
+        "description": "Worked with TED fellow Juliette LaMontagne Ed.D. on 3-month long project focused on improving civic engagement with technology in NYC through research, prototyping, and iteration, mentored by designers at Qlabs, Google Creative Lab, IDEO, frog design, worked out of AOL Ventures office in NYC"
+      },
+      {
+        "title": "Northwestern University CTD",
+        "dates": "2010",
+        "location": "Evanston, IL",
+        "institution": "Summer Engineering Design",
+        "description": "Learned engineering design principles, conducted a field study, earned an A"
+      },
+      {
+        "title": "Neuqua Valley High School",
+        "dates": "2008-2012",
+        "location": "Naperville, IL",
+        "institution": "",
+        "description": "ACT composite of 35 (above 99%-ile), AP Scholar w/ Distinction, National Merit, State Finalist in BPA, Illinois Innovation Talent, ΔΕΦ German Honor Society"
+      }
+    ],
+
+
+    "work": [
+      {
+        "title": "Consultant",
+        "dates": "2015",
+        "location": "San Francisco, CA",
+        "institution": "Airbnb",
+        "description": "Working with Asia-Pacific team to improve experience and increase metrics"
+      },
+      {
+        "title": "Co-founder & Design Lead",
+        "dates": "2014-2015",
+        "location": "Berkeley, CA",
+        "institution": "TinyTerms",
+        "description": "Led a team of 7, using design to make the legal experience better"
+      },
+      {
+        "title": "Mobile Interface Design Intern",
+        "dates": "Summer 2013",
+        "location": "Beijing, China",
+        "institution": "Hejia Software",
+        "description": "Led UX and UI for a full redesign of Hejia's mobile ERP client, working with iOS and Android developers to implement  on both platforms"
+      },
+      {
+        "title": "Co-Founder, Designer",
+        "dates": "2012-2013",
+        "location": "Chicago, IL",
+        "institution": "tosigram",
+        "description": "Conducted user interviews, data collection, created prototypes and interface for web app, won a $2000 grant from IMSA after presentation at MIT Enterprise Forum"
+      },
+      {
+        "title": "Co-Founder, Designer",
+        "dates": "2011",
+        "location": "Chicago, IL",
+        "institution": "Viatask",
+        "description": "Assisted with market research, user interviews, product roadmap, and helped with launch at SPARK Chicago"
+      },
+      {
+        "title": "Pilot Tester",
+        "dates": "2011-2012",
+        "location": "",
+        "institution": "Google",
+        "description": "Received Cr-48 prototype laptop from Chrome OS team and helped with testing and submitting bug reports"
+      },
+      {
+        "title": "Intern",
+        "dates": "Summer 2011",
+        "location": "Chicago, IL",
+        "institution": "Marketing Capitalists",
+        "description": "The summer before my senior year of high school, I helped a local marketing firm develop an incubator branch to trade equity for marketing services"
+      },
+      {
+        "title": "Research Assistant",
+        "dates": "2010-2011",
+        "location": "Naperville, IL",
+        "institution": "ComEd Project",
+        "description": "Partnered with ComEd under Illinois Innovation Talent, audited facilities energy usage and designed plan to reduce computer idle time at my high school with IT department implementation, reducing electricity cost by $4,100 a year"
+      }
+    ],
+
+
+    "volunteer": [
+      {
+        "title": "Lab Coordinator",
+        "dates": "Oct 2013",
+        "location": "Chicago, IL",
+        "institution": "Chicago Ideas Week",
+        "description": "As Lab Coordinator, I served as liaison between CIW and labs, helping host labs with Accenture ACIN Lab, DraftFCB's Digital/UX, Northwestern University Knight Lab, and Navy Pier"
+      },
+      {
+        "title": "Bike Instructor",
+        "dates": "Jul-Aug 2012",
+        "location": "New York, NY",
+        "institution": "Bike New York",
+        "description": "While living in New York City for Project Breaker, I helped adults learn to bike (using an awesome method pioneered by Bike NY)"
+      },
+      {
+        "title": "Teaching Assistant",
+        "dates": "2008-2009",
+        "location": "Lisle, IL",
+        "institution": "Ray Chinese School",
+        "description": "I worked in the classroom and helped students practice & learn the Chinese language"
+      }
+    ],
+
+
+    "skillsDesign": ["User experience", "User research", "Mockups", "Prototyping", "Color, layout, typography", "Lean methodology"],
+
+    "skillsTech": ["HTML5, CSS3", "CSS grid and frameworks", "Git", "Node.js templating", "jQuery"],
+
+
+    "awards": [
+      "1st place, IDEO JumpstART V with Duane Bray", 
+      "1st place, Science Hack Day Chicago", 
+      "Best Product Demo, Startup Weekend Chicago",
+      "2nd place, $2000 grant, IMSA Power Pitch at MIT Enterprise Forum",
+      "Winner of 'DEMOgod' award at DEMO Spring 2012",
+      "Selected by Twilio and SendGrid for all-expenses paid trip", 
+      "Has been featured on VentureBeat, Computerworld, Crain’s Business, Chicago Tribune, Sun-Times Media, TechCrunch",
+      "Once had a conference call with President Obama",
+      "Can speak English, Mandarin Chinese, and German",
+      "Canadian (but can work in the United States)"
+    ],
+
+
+    "orgs": [
+      "IXDA",
+      "Student member ITA",
+      "CIDD",
+      "On campus:",
+      "Software Development Club",
+      "The Wildlife Society",
+      "Gators for Green Design",
+      "TED Club"
+    ],
+
+
+    "fun": [
+      "Ask me for references! :)"
+    ]
+
+  }
+}
+

@@ -1,0 +1,164 @@
+<head>
+	<meta charset="UTF-8">
+
+	<title>ndrw.me weeResume</title>
+
+	<link href="firstToast.css" rel="stylesheet" media="screen"> <!--I'll figure this out later, since it's repeating a lot of the firstToast.css from the main site, I should pull out the needed CSS declarations and inherit the rest-->
+
+	<link href='http://fonts.googleapis.com/css?family=La+Belle+Aurore|Arizonia' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+	<div class="grid">
+
+		<header class="unit span-grid">
+			<h1 class="fullname"><%= header.fullName %></h1>
+			<h2 class="byline"><%= header.headline %></h2>
+		</header>
+
+		<ul class="contact-info unit span-grid">
+			<li>
+				<p><a href="tel:4107756326"><%= contact.phone %></a></p>
+			</li>
+			<li>
+				<p><a href="mailto:andrew@ndrw.me?cc=andrewnonumbers@gmail.com&body=Hey%20I%20saw%20your%20resume%20"><%= contact.email %></a></p>
+			</li>
+			<li>
+				<p><a class="lmk-twitter" href="https://twitter.com/_ndrw">Twitter</a></p>
+			</li>
+			<li>
+				<p><a class="lmk-linkedin" href="http://www.linkedin.com/in/andrewnonumbers">LinkedIn</a></p>
+			</li>
+		</ul>
+
+		<div class="unit four-of-five" id="main-body">
+
+			<div class="unit one-of-four left">
+				<h2>About</h2>
+			</div>
+			<div class="unit three-of-four">
+				<p><%= summary %></p>
+			</div>
+
+			<div class="unit one-of-four left">
+				<h2>Experience</h2>
+			</div>
+			<div class="unit three-of-four content">
+			<% for(var i=0; i<work.length; i++) {%>
+				<ul class="entry">
+					<li class="dates"><%= work[i].dates %></li>
+					<li class="title"><h4><%= work[i].title %></h4></li>
+					<li class="institution"><%= work[i].institution %></li>
+					<li class="location"><%= work[i].location %></li>
+				</ul>
+				<p><%= work[i].description %></p>
+			<% } %>
+			</div>
+
+			<div class="unit one-of-four left">
+				<h2>Education</h2>
+			</div>
+			<div class="unit three-of-four content">
+			<% for(var i=0; i<education.length; i++) {%>
+				<ul class="entry">
+					<li class="dates"><%= education[i].dates %></li>
+					<li class="title"><h4><%= education[i].title %></h4></li>
+					<li class="institution"><%= education[i].institution %></li>
+				</ul>
+				<p><%= education[i].description %></p>
+			<% } %>
+			</div>
+
+			<div class="unit one-of-four left">
+				<h2>Notables</h2>
+			</div>
+			<div class="unit three-of-four">
+				<ul>
+					<% for(var i=0; i<awards.length; i++) {%>
+						<li>&#10166; <%= awards[i] %></li>
+					<% } %>
+				</ul>
+				<ul>
+					<% for(var i=0; i<fun.length; i++) {%>
+						<li><%= fun[i] %></li>
+					<% } %>
+				</ul>
+			</div>
+
+		</div>
+
+		<div class="unit one-of-five rightbar">
+			<!--<h2>Skills</h2>
+
+
+			<ul>
+				<h4>Design skills</h4>
+				<% for(var i=0; i<skillsDesign.length; i++) {%>
+						<li><%= skillsDesign[i] %></li>
+				<% } %>
+			</ul>
+
+
+			<ul>
+				<h4>Tech skills</h4>
+				<% for(var i=0; i<skillsTech.length; i++) {%>
+						<li><%= skillsTech[i] %></li>
+				<% } %>
+			</ul>
+			<!--<p><a href="http://space.ndrw.me/#skills">See what I think UX design is &rsaquo;&rsaquo;</a></p>-->
+
+			
+			<ul id="volunteer-experience">
+				<h2>Volunteer Experience</h2>
+				<% for(var i=0; i<volunteer.length; i++) {%>
+						<li class="title"><h4><%= volunteer[i].title %></h4></li>
+						<li class="institution"><%= volunteer[i].institution %></li>
+						<p><%= volunteer[i].description %></p>
+				<% } %>
+			</ul>
+			
+
+			<!--<h2>Words people would use to describe me</h2>
+			<ul>
+				<li>thoughtful</li>
+				<li>observant</li>
+				<li>curious</li>
+				<li>technologist</li>
+				<li>optimist</li>
+				<li>meticulous</li>
+				<li>sensing</li>
+				<li>self-driven</li>
+				<li>autodidact</li>
+			</ul>-->
+
+
+			<h2>Extras</h2>
+			<ul>
+				<li><a href="http://designtox.tumblr.com/"><img class="miniimg" src="designtox.png"></a></li>
+				<li>I write about interface &amp; interaction design at designtox</li>
+			</ul>
+
+
+			<ul class="miniquote">
+				<li><em>"Time is a drug. Too much of it kills you."</em></li>
+			</ul>
+
+			<footer>
+				<ul>
+					<li>Made with HTML5, LESS, EJS, Harp.js, and Toast grid</li>
+					<li>See how it was made at <a href="https://github.com/AndrewNoNumbers/weeResume">GitHub</a></li>
+				</ul>
+			</footer>
+		</div>
+
+		
+
+		<!--<div class="call-widget">
+			<object type="application/x-shockwave-flash" data="https://clients4.google.com/voice/embed/webCallButton" width="230" height="85"><param name="movie" value="https://clients4.google.com/voice/embed/webCallButton" /><param name="wmode" value="transparent" /><param name="FlashVars" value="id=fc4b1761ebb9ee4d6a5b8ccbe5058d9060f39609&style=0" /></object>
+		</div>-->
+
+
+	</div>
+
+</body>
+
