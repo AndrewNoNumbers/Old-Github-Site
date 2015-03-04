@@ -2,7 +2,11 @@
   Global
 ----------------*/
 
-@main: #FFC83D;
+/*@main: #FFC83D;*/
+@main: #03A3FF;
+@main-lighten: lighten(@main, 20%);
+@main-fade: fade(@main, 50%);
+@gray: #A2A2A2;
 @classy-dark-gray: #1A1A1A;
 
 body{
@@ -19,7 +23,7 @@ a {
   color: @main;
 }
 a:hover {
-  color: #fff;
+  color: @main-lighten;
 }
 
 h1{
@@ -52,7 +56,7 @@ ul li {
   top: 0;
   left: 0;
   background-color: #fff;
-  background: url(../img/border_dune_desktop.jpg) no-repeat center top;
+  background: url(../img/Unsplash/829d24cf.jpeg) no-repeat;
   background-attachment: relative;
   background-position: center center;
   height: 110%;
@@ -442,3 +446,8 @@ ul.majorlist {
 
 
 
+.favorites-page section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+ 

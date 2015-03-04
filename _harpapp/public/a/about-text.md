@@ -2,16 +2,16 @@
 The header of this site is by California artist, Michael Martin. All other work is by me.-->
 
 ##Hi, I'm Andrew.
-I'm a student with a strong interest in designing digital products and experiences. In the past, I've . However, what I truly love is experiences, products, behavior, and humans. 
+I'm a student interested in design, products, behavior, and humans.
 
-I'm a student interested in the intersection of education and design. 
+I currently live in California, but have previously inhabited places including Chicago, Florida, New York, Vancouver, Montreal, and Beijing.
 
-I currently live in California, but have previously inhabited places including Chicago, Florida, New York, Montreal, Beijing, and Vancouver.
+I will write a longer description here later.
 
 
 ###About this site
-This site was made with some HTML5, LESS, Jade, Harp.js (which is excellent and I highly recommend to everyone), and Markdown. I'm not a developer but I can write some code.
+This site was previously run on Weebly (2008-2009) and self-hosted Wordpress (2010-2013).
 
-This site has previously been run in Wordpress (2010-2013) and Weebly (2008-2009)
+The current site was made with some HTML5, LESS, Jade, and Harp.js (which is excellent and I highly recommend to everyone). I'm not a developer but I can write some code.
 
-Press features: VentureBeat / Chicago Tribune / SunTimes / TechCrunch
+
