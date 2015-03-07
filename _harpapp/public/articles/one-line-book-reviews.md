@@ -1,6 +1,9 @@
 One-line UX book reviews
 ======================
 
+###Tog on Interface by Bruce Tognazzini (c) 1992
+Despite being two decades old, this amazingly entertaining book offers more than historical value as Tog examines many things we seem to have forgotten in designing interfaces (such as how Jungian personality types affect the perception and use of interfaces). 
+
 ###Freehand: Sketching Tips and Tricks Drawn From Art by Helen Birch (c) 2013
 Handbook of ideas and basics of visual art. Won't make you a better artist but will give you a better grasp of visual art, especially for those without an art background.
 

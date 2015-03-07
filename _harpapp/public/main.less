@@ -2,8 +2,9 @@
   Global
 ----------------*/
 
-/*@main: #FFC83D;*/
-@main: #03A3FF;
+/*@main: #FFC83D;*/ 
+@main-blue: #03A3FF;
+@main: #FFC83D;
 @main-lighten: lighten(@main, 20%);
 @main-fade: fade(@main, 50%);
 @gray: #A2A2A2;
@@ -314,7 +315,7 @@ nav ul li {
   letter-spacing: 0.04rem;
 
   border: none;
-  background: #00A3FF; /* #00A3FF*/
+  background: @main-blue; /* #00A3FF*/
   height: 30px;
   width: 120px;
   color: white;
@@ -324,7 +325,7 @@ nav ul li {
 
 }
 #thebar .submit:hover {
-  background: #057EAA;
+  background: lighten(@main-blue, 20%);
 }
 
 
