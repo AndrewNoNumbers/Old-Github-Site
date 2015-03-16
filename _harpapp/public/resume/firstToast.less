@@ -266,8 +266,54 @@ header, .contact-info {
 	text-align: center;
 }
 
+	
+/*==Contact info block 1 lite==*/
+
+	/**
+	.contact-info {
+		background-color: white;
+
+		border-radius: 0px;
+
+		margin-top: 20px;
+		margin-bottom: 40px;
+
+		border-bottom: 2px solid @main-lighten;
+		border-top: 1px solid @main-lighten;
+		border-right: 1px solid @main-lighten;
+		border-left: 1px solid @main-lighten;
+
+		padding: 0 40px 0 30px; 
+	}
+
+	.contact-info .unit {
+		padding: 10px 0;
+	}
+	.contact-info a {
+		padding: 3px 8px 4px 8px;
+
+		text-decoration: none;
+
+		color: @main-lighten;
+		border-color: @main-lighten;
+
+		font-size: 1rem;
+
+	    transition: color 0.4s, background-color 0.4s, border-color 0.4s, transform 1.5s;
+	}
+	.contact-info a:hover {
+		color: @main;
+		border-color: @main;
+	}
+
+
+	**/
+
+/*==Contact info block 2 gold minimal==*/ 
+
 .contact-info {
 	background-color: @main;
+
 	border-radius: 0px;
 
 	margin-top: 20px;
@@ -275,30 +321,50 @@ header, .contact-info {
 
 	border-bottom: 4px solid @main-lighten;
 
-	padding: 0 5px 0 0; /*just some padding on the right*/
+	padding: 0 50px 0 40px; 
 }
 
-.contact-info li {
-	display: inline-block;
-	margin: 6px 24px 8px 0;
-	height: 21px;
+.contact-info .unit {
+	padding: 10px 0;
 }
-.contact-info li a {
+.contact-info a {
 	padding: 3px 8px 4px 8px;
-	border-radius: 20px;
-	text-decoration: underline;
-	background-color: @main;
-	color: white;
-	border: 1px solid @main;
+
+	text-decoration: none;
+
+	/*border: 1px solid;
+	border-radius: 20px;*/
+
+	color: @main-lighten;
+	border-color: @main-lighten;
 
 	font-size: 1rem;
-	letter-spacing: 0.02rem;
 
-    transition: color 0.4s, background-color 0.4s, transform 2s;
+	/*text-shadow: 0px 1px 0px rgba(0,0,0,0.4);*/
+
+
+    transition: color 0.4s, background-color 0.4s, border-color 0.4s, text-shadow 0.4s, transform 1.5s;
 }
-.contact-info li a:hover {
-	background-color: white;
-	color: @main;
+.contact-info a:hover {
+	color: white;
+	border-color: white;
+
+	text-shadow: 0px 0px 2px rgba(255,255,255,0.8);
+	/*this is not a very good hover effect, should probably move to active and come up with a better hover effect*/
+}
+.contact-info a:active {
+	
+	
+
+}
+
+.contact-info .legend {
+	color: white;
+
+	font-weight: 400;
+
+	
+	
 }
 
 

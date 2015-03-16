@@ -97,6 +97,8 @@ ul li {
   text-align: center;
 
   margin-bottom: 10px;
+
+  padding: 0 13px;
 }
 
 .bottomBar {
@@ -131,8 +133,10 @@ ul li {
 .menu {
   position: absolute; /*why the heck does this mess up the right margin of the menu section*/
   top: 123%;
+  left: 0;
+  right: 0;
   /*margin-top: 700px; /*this is the problem, because it's a static number, so it's 700 from top no matter how tall the screen is*/
-  margin-bottom: 75px;
+  margin-bottom: 30px;
   line-height: 2em;
 }
 .menu .unit {
@@ -187,10 +191,16 @@ nav ul li {
   Projects Display
 ----------------*/
 
-.projects{
+.projects {
   margin-top: 100px;
 }
 
+.projects img {
+  max-width: 140%;
+}
+.projects iframe {
+  max-width: 100%;
+}
 
 .a-project {
   margin-top: 150px;
@@ -330,17 +340,6 @@ nav ul li {
 
 
 
-.majorlist {
-  margin-top: 10px;
-  list-style: none;
-}
-.majorlist li a {
-  font-size: 1.6rem;
-  padding-bottom: 20px;
-  text-decoration: none;
-  display: block;
-}
-
 @media screen and (max-width: 650px) {
   #thebar {
     display: none;
@@ -354,12 +353,16 @@ nav ul li {
   Footer
 ----------------*/
 
-.sitewide footer {
-  position: absolute;
-  bottom: 20px;
+.sitewide {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-top: 40px;
   
-  margin: 70px 0;
-  font-size: 0.8rem;
+  color: @gray;
+
+  font-size: 0.75rem;
   text-align: center;
 }
 
@@ -372,34 +375,54 @@ nav ul li {
   Pages 
 ----------------*/
 
-.articlecontent {
+.picme {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+.picme img {
+  width: 90%;
+}
+
+
+
+.articlecontent { /*keep in mind articleindex is a child of articlecontent, because I'm suck at organization*/
 
   p, ul {
-    border-bottom: 2px solid black;
-
-    width: 700px;
+    width: 670px;
 
     margin-left: auto;
     margin-right: auto;
 
 
     text-align: left;
-    font-family: 'Raleway', Helvetica, sans-serif;
-    font-size: 30px;
-    color: #262A27;
-    margin-top: 300px;
-    margin-bottom: 300px;
-    padding: 24px 16px;
-    background: #fff;
+    font-family: 'Lato', Helvetica, sans-serif;
+    font-size: 26px;
+    color: white;
+    margin-top: 10px;
+    margin-bottom: 250px;
+    padding: 24px 24px;
+    background: @main;
     border-radius: 5px;
+    line-height: 2rem;
 
-    border-top-style: solid;
-    border-top-width: 20px;
+    /*border-top: 0px solid;
+    border-bottom: 2px solid @main-lighten;
+
 
     box-shadow: 0px 1px 0px rgba(0,0,0,0.2),
      0px 1px 3px rgba(0,0,0,0.2),
      0px 8px 13px rgba(0,0,0,0.1),
-     0px 18px 23px rgba(0,0,0,0.1);
+     0px 18px 23px rgba(0,0,0,0.1);*/
+  }
+
+  h1 {
+    width: 70%;
+    line-height: 3.3rem;
+    margin-bottom: 30px;
+
+    text-transform: uppercase;
+    font-weight: 300;
   }
 
   h2 {
@@ -416,14 +439,19 @@ nav ul li {
 
   h3 {
     font-size: 2em;
+    font-weight: 300;
+
+    color: @main;
+
+    text-align: left;
 
     width: 700px;
     margin-left: auto;
     margin-right: auto;
 
-    border-bottom: 2px solid black;
+    margin-top: 300px;
 
-    margin-bottom: -150px;
+    border-bottom: 2px solid;
 
   }
 
@@ -438,12 +466,30 @@ nav ul li {
 }
 
 
-ul.majorlist {
-  box-shadow: none;
-  border: none;
+.articleindex, .personallinks {
+  .majorlist {
+    list-style: none;
+  }
+  .majorlist li a {
+    font-size: 1.6rem;
+    padding: 9px 0;
 
+    text-decoration: none;
+    display: block;
+
+    color: @main-lighten;
+  }
+  .majorlist li a:hover {
+    color: white;
+  }
 }
-/*overrides ul articlecontent styling because it shouldn't display like that on the index page*/
+
+.personallinks .majorlist li a {
+  color: @main;
+}
+.personallinks .majorlist li a:hover {
+  color: @main-lighten;
+}
 
 
 

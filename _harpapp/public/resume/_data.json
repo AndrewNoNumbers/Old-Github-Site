@@ -29,18 +29,18 @@
         "description": "6 MOOCs completed from Stanford University, Johns Hopkins University, University of Toronto, University of Virginia / member of Lynda, recipient of two-year Treehouse Gold scholarship / workshops at AIGA, Tekserve, Noble Desktop, etc."
       },
       {
-        "title": "University of Florida",
-        "dates": "2012",
-        "location": "Gainesville, FL",
-        "institution": "Digital Arts & Sciences, College of Engineering",
-        "description": "1st place at IDEO JumpstART V / volunteer organizer for TEDxUF / finalist for The HackerHouse startup incubator / volunteer at 3DayStartup and Startup Weekend Gainesville / member of TEC, Software Development Club, Gators for Green Design, The Wildlife Society, and TED Club"
-      },
-      {
         "title": "Project Breaker",
         "dates": "Summer 2012",
         "location": "New York, NY",
         "institution": "Project Breaker",
         "description": "Worked with TED fellow Juliette LaMontagne Ed.D. on 3-month long project focused on improving civic engagement with technology in NYC through research, prototyping, and iteration, mentored by designers at Qlabs, Google Creative Lab, IDEO, frog design, worked out of AOL Ventures office in NYC"
+      },
+      {
+        "title": "University of Florida",
+        "dates": "2012",
+        "location": "Gainesville, FL",
+        "institution": "Digital Arts & Sciences, College of Engineering",
+        "description": "1st place at IDEO JumpstART V / volunteer organizer for TEDxUF / finalist for The HackerHouse startup incubator / volunteer at 3DayStartup and Startup Weekend Gainesville / member of TEC, Software Development Club, Gators for Green Design, The Wildlife Society, and TED Club"
       },
       {
         "title": "Northwestern University CTD",
@@ -125,7 +125,7 @@
         "dates": "Oct 2013",
         "location": "Chicago, IL",
         "institution": "Chicago Ideas Week",
-        "description": "As Lab Coordinator, I served as liaison between CIW and labs, helping host labs with Accenture ACIN Lab, DraftFCB's Digital/UX, Northwestern University Knight Lab, and Navy Pier"
+        "description": "As Lab Coordinator, I served as liaison for CIW 2013 and helped host labs with Accenture ACIN Lab, DraftFCB's Digital/UX, Northwestern University Knight Lab, and Navy Pier"
       },
       {
         "title": "Bike Instructor",
@@ -144,9 +144,9 @@
     ],
 
 
-    "skillsDesign": ["User experience", "User research", "Mockups", "Prototyping", "Color, layout, typography", "Lean methodology"],
+    "skillsDesign": ["Mockups", "Prototyping", "Sketching", "Color, layout, typography", "Sketch", "Adobe CS Suite", "Flinto", "Origami"],
 
-    "skillsTech": ["HTML5, CSS3", "CSS grid and frameworks", "Git", "Node.js templating", "jQuery"],
+    "skillsTech": ["HTML5", "CSS3", "CSS grids and frameworks", "Git", "Xcode", "Node.js templating", "Meteor.js"],
 
 
     "awards": [
@@ -157,6 +157,7 @@
       "Winner of 'DEMOgod' award at DEMO Spring 2012",
       "Selected by Twilio and SendGrid for all-expenses paid trip", 
       "Has been featured on VentureBeat, Computerworld, Crain’s Business, Chicago Tribune, Sun-Times Media, TechCrunch",
+      "Worked on a designathon with Google",
       "Once had a conference call with President Obama",
       "Can speak English, Mandarin Chinese, and German",
       "Canadian (but can work in the United States)"
