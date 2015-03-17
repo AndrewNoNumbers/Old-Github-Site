@@ -5,9 +5,9 @@ How to Be a UX/Product Designer
 
 ###On Process
 
-Have principles when you design. A specific set of principles you decide on for that product. You can't just trust everything to taste.
+Have principles when you design – a specific set of principles you decide on for that product. You can't just trust everything to taste.
 
-Creativity is at its best when there are limitations. Cliche but so true.
+Creativity is at its best when there are limitations. Cliche but true.
 
 DO mockup and wireframe; those are important. 
 
