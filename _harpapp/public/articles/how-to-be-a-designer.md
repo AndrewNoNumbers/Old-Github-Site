@@ -31,6 +31,8 @@ There needs to be a freeze date, at which layout and architecture info is finali
 
 I like to do the color and texture bits last because that's the fun part and it requires a finalized design and doesn't take much effort. It's the least important part for a good UX yet that's what most people notice and think you need to do first .
 
+Patterns really add a lot.
+
 
 ###On Your Role as a Designer
 

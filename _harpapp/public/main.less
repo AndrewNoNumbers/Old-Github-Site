@@ -2,9 +2,8 @@
   Global
 ----------------*/
 
-/*@main: #FFC83D;*/ 
 @main-blue: #03A3FF;
-@main: #FFC83D;
+@main: #FFC300;
 @main-lighten: lighten(@main, 20%);
 @main-fade: fade(@main, 50%);
 @gray: #A2A2A2;
@@ -57,7 +56,7 @@ ul li {
   top: 0;
   left: 0;
   background-color: #fff;
-  background: url(../img/Unsplash/829d24cf.jpeg) no-repeat;
+  background: url(../img/cloud2.jpg) no-repeat;
   background-attachment: relative;
   background-position: center center;
   height: 110%;
@@ -99,10 +98,16 @@ ul li {
   margin-bottom: 10px;
 
   padding: 0 13px;
+
+  color: white;
+
 }
 
 .bottomBar {
   margin: 0 60px;
+
+  color: white;
+
 }
 .bottomBar ul li {
   display: inline;
@@ -158,20 +163,20 @@ nav ul li {
 
 
 .mainlink a{
-  color: @classy-dark-gray;
+  color: @main;
   text-decoration: none;
   font-size: 1.4rem;
   padding: 5px 20px 9px 20px;
 }
 .mainlink .ndrwlink {
-  color: @classy-dark-gray;
+  color: @main;
   text-decoration: none;
-  font-size: 1.4rem;
+  font-size: 1.3rem;
   padding: 5px 20px 9px 20px;
   border: 2px solid;  
 }
 .mainlink a:hover {
-  color: @main;
+  color: @main-lighten;
 }
 
 .mutedtext {

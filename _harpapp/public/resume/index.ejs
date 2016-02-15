@@ -17,20 +17,20 @@
 		</header>
 
 
-		<div class="contact-info">
-			<div class="unit one-of-five">
-				<span class="legend">Say "hi"!</span>
+		<div class="contact-info unit span-grid">
+			<div class="unit one-of-four">
+				<span class="legend">Say hi!</span>
 			</div>
-			<div class="unit one-of-five">
+			<!--<div class="unit one-of-four">
 				<span><a href="tel:4107756326"><%= contact.phone %></a></span>
-			</div>
-			<div class="unit one-of-five">
+			</div>-->
+			<div class="unit one-of-four">
 				<span><a href="mailto:andrew@ndrw.me?cc=andrewnonumbers@gmail.com&body=Hey%20I%20saw%20your%20resume%20"><%= contact.email %></a></span>
 			</div>
-			<div class="unit one-of-five">
+			<div class="unit one-of-four">
 				<span><a class="lmk-twitter" href="https://twitter.com/_ndrw">Twitter</a></span>
 			</div>
-			<div class="unit one-of-five">
+			<div class="unit one-of-four">
 				<span><a class="lmk-linkedin" href="http://www.linkedin.com/in/andrewnonumbers">LinkedIn</a></span>
 			</div>	
 		</div>
@@ -42,7 +42,7 @@
 				<h2>About</h2>
 			</div>
 			<div class="unit three-of-four">
-				<p><%= summary %></p>
+				<p class="about-summary"><%= summary %></p>
 			</div>
 
 			<div class="unit one-of-four left">
@@ -94,7 +94,7 @@
 
 		<div class="unit one-of-five rightbar">
 			<ul id="volunteer-experience">
-				<h2>Volunteer Experience</h2>
+				<h2>Volunteering</h2>
 				<% for(var i=0; i<volunteer.length; i++) {%>
 						<li class="title"><h4><%= volunteer[i].title %></h4></li>
 						<li class="institution"><%= volunteer[i].institution %></li>
@@ -150,7 +150,7 @@
 
 			<footer>
 				<ul>
-					<li>Made with HTML5, LESS, EJS, Harp.js, and Toast grid</li>
+					<li>Made with HTML5, LESS, EJS, Harp.js</li>
 					<li>See how it was made at <a href="https://github.com/AndrewNoNumbers/weeResume">GitHub</a></li>
 					<!--<li>See an <a href="http://space.ndrw.me/#skills">older version</a> of my resume</li>-->
 				</ul>

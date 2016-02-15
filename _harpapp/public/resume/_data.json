@@ -2,7 +2,7 @@
   "index": {
 
     "header": {
-      "fullName": "Andrew S. Chen",
+      "fullName": "Andrew Sider Chen",
       "headline": "There are secrets left in the world."
     },
 
@@ -11,35 +11,35 @@
       "email": "andrew@ndrw.me"
     },
 
-    "summary": "I'm a designer with a background in tech and startup companies. I've led design on several projects, and believe that it is my most direct way of impacting the world. I like to learn broadly, make things, and create exceptional experiences.",
+    "summary": "I'm a designer with a background in tech and startup companies. I've led design on several projects, and I believe that it is the most efficient way for me to change the world. I like to learn broadly, make things, and build the future.",
 
     "education": [
       {
         "title": "University of California at Berkeley",
-        "dates": "2014",
+        "dates": "2014-2016",
         "location": "Berkeley, CA",
-        "institution": "Summer Semester",
-        "description": "College of Environmental Design, Zero Energy Building, Berkeley Art Studio"
+        "institution": "",
+        "description": "College of Environmental Design and Haas School of Business / Google designathon / D-lab trainings / Berkeley Art Studio"
       },
       {
         "title": "Additional Education",
         "dates": "2014",
         "location": "",
         "institution": "",
-        "description": "6 MOOCs completed from Stanford University, Johns Hopkins University, University of Toronto, University of Virginia / member of Lynda, recipient of two-year Treehouse Gold scholarship / workshops at AIGA, Tekserve, Noble Desktop, etc."
+        "description": "Online classes completed from Stanford University, Johns Hopkins University, University of Toronto, University of Virginia / membership at Lynda and Treehouse Gold / workshops at AIGA, Noble Desktop, GA, etc."
       },
       {
         "title": "Project Breaker",
         "dates": "Summer 2012",
         "location": "New York, NY",
         "institution": "Project Breaker",
-        "description": "Worked with TED fellow Juliette LaMontagne Ed.D. on 3-month long project focused on improving civic engagement with technology in NYC through research, prototyping, and iteration, mentored by designers at Qlabs, Google Creative Lab, IDEO, frog design, worked out of AOL Ventures office in NYC"
+        "description": "Worked with TED fellow Juliette LaMontagne Ed.D. on 3-month project focused on improving civic engagement in NYC through research, prototyping, and iterative development, mentored by designers at Google Creative Lab, Qlabs, IDEO, frog design and working out of AOL Ventures office in NYC"
       },
       {
         "title": "University of Florida",
         "dates": "2012",
         "location": "Gainesville, FL",
-        "institution": "Digital Arts & Sciences, College of Engineering",
+        "institution": "B.S. Digital Arts & Sciences, College of Engineering",
         "description": "1st place at IDEO JumpstART V / volunteer organizer for TEDxUF / finalist for The HackerHouse startup incubator / volunteer at 3DayStartup and Startup Weekend Gainesville / member of TEC, Software Development Club, Gators for Green Design, The Wildlife Society, and TED Club"
       },
       {
@@ -54,7 +54,7 @@
         "dates": "2008-2012",
         "location": "Naperville, IL",
         "institution": "",
-        "description": "ACT composite of 35 (above 99%-ile), AP Scholar w/ Distinction, National Merit, State Finalist in BPA, Illinois Innovation Talent, ΔΕΦ German Honor Society"
+        "description": "ACT composite of 35 (99%-ile), AP Scholar w/ Distinction, National Merit, State Finalist in BPA, 1st Place Regional in WYSE, Illinois Innovation Talent, ΔΕΦ German Honor Society"
       }
     ],
 
@@ -68,7 +68,7 @@
         "description": "Working with Asia-Pacific team to improve experience and increase metrics"
       },
       {
-        "title": "Co-founder & Design Lead",
+        "title": "Co-Founder & Design Lead",
         "dates": "2014-2015",
         "location": "Berkeley, CA",
         "institution": "TinyTerms",
@@ -93,7 +93,7 @@
         "dates": "2011",
         "location": "Chicago, IL",
         "institution": "Viatask",
-        "description": "Assisted with market research, user interviews, product roadmap, and helped with launch at SPARK Chicago"
+        "description": "Conducted with market research, user interviews, product prototyping, and helped with launch at SPARK Chicago"
       },
       {
         "title": "Pilot Tester",
@@ -107,14 +107,14 @@
         "dates": "Summer 2011",
         "location": "Chicago, IL",
         "institution": "Marketing Capitalists",
-        "description": "The summer before my senior year of high school, I helped a local marketing firm develop an incubator branch to trade equity for marketing services"
+        "description": "The summer before my senior year of high school, I helped a local marketing firm develop an incubator branch to trade marketing services for equity in startups"
       },
       {
         "title": "Research Assistant",
         "dates": "2010-2011",
         "location": "Naperville, IL",
         "institution": "ComEd Project",
-        "description": "Partnered with ComEd under Illinois Innovation Talent, audited facilities energy usage and designed plan to reduce computer idle time at my high school with IT department implementation, reducing electricity cost by $4,100 a year"
+        "description": "Partnered with ComEd under Illinois Innovation Talent, audited facilities energy usage and designed plan to reduce computer idle time at my high school, reducing electricity cost by $4,100 a year"
       }
     ],
 
@@ -125,14 +125,14 @@
         "dates": "Oct 2013",
         "location": "Chicago, IL",
         "institution": "Chicago Ideas Week",
-        "description": "As Lab Coordinator, I served as liaison for CIW 2013 and helped host labs with Accenture ACIN Lab, DraftFCB's Digital/UX, Northwestern University Knight Lab, and Navy Pier"
+        "description": "As Lab Coordinator, I served as liaison between Chicago Ideas Week 2013 and Accenture ACIN Lab, DraftFCB Digital/UX, Northwestern University Knight Lab, and Navy Pier"
       },
       {
-        "title": "Bike Instructor",
+        "title": "Instructor",
         "dates": "Jul-Aug 2012",
         "location": "New York, NY",
         "institution": "Bike New York",
-        "description": "While living in New York City for Project Breaker, I helped adults learn to bike (using an awesome method pioneered by Bike NY)"
+        "description": "While living in New York City for Project Breaker, I helped teach adults to ride bicycles (using an awesome method pioneered by Bike NY)"
       },
       {
         "title": "Teaching Assistant",
@@ -144,9 +144,9 @@
     ],
 
 
-    "skillsDesign": ["Mockups", "Prototyping", "Sketching", "Color, layout, typography", "Sketch", "Adobe CS Suite", "Flinto", "Origami"],
+    "skillsDesign": ["Design Process", "UX Research", "Ideation", "Prototyping", "Visual Design", "Iterative Product Development", "Usability Analysis", "Color, composition, typography", "Sketch", "Adobe CS Suite", "Flinto", "Origami"],
 
-    "skillsTech": ["HTML5", "CSS3", "CSS grids and frameworks", "Git", "Xcode", "Node.js templating", "Meteor.js"],
+    "skillsTech": ["HTML5", "CSS3 and preprocessors", "Front-end frameworks and grids", "Git", "Xcode", "Node.js templating"],
 
 
     "awards": [
@@ -156,11 +156,8 @@
       "2nd place, $2000 grant, IMSA Power Pitch at MIT Enterprise Forum",
       "Winner of 'DEMOgod' award at DEMO Spring 2012",
       "Selected by Twilio and SendGrid for all-expenses paid trip", 
-      "Has been featured on VentureBeat, Computerworld, Crain’s Business, Chicago Tribune, Sun-Times Media, TechCrunch",
-      "Worked on a designathon with Google",
-      "Once had a conference call with President Obama",
       "Can speak English, Mandarin Chinese, and German",
-      "Canadian (but can work in the United States)"
+      "Canadian-American dual-citizen"
     ],
 
 
